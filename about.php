@@ -1,4 +1,6 @@
 1.AOP编程 ： 面向切面编程思想 (中间件，behavior)
+    数据验证层
+    异常处理层
 2.ThinkPHP 5 +MySQL
 3.客户端向服务端请求数据，完成自身逻辑
 4.CMS 向服务端请求数据，实现发货与发送微信消息
@@ -76,3 +78,32 @@
 28.tp5日志
     1.config 配置
     2.关闭tp5日志 file->test，然后再要生成日志地方初始化日志
+29.tp5查询数据库
+    1.原生sql语句
+    2.构造器查询数据库
+    3.模型 关联模型操作数据
+30.tp5连接数据库
+    1.Db->Collection(实例化对象连接数据库)
+        query查询器(curd简单封装)
+        原生sql
+        ORM模型
+    2.驱动提供不同类（F:\applet\thinkphp\library\think\db）
+    3.前面是辅助方法(链式方法)后面是查询方法。 不执行select find update delete insert不会执行sql语句
+        前面返回的是对象
+31.
+    1.开启sql数据库调试
+     入口文件初始化日志配置
+    2.
+        ORM （object relation mapping 对象关系映射）
+        模型关联 ()
+        Db是model基础
+        DB返回的是数组，模型返回的是对象
+        业务简单，一个模型对应一张表（默认数据表名和模型名一一对应）
+        自动生成模型：
+            根目录 php think make:model api/BannerItem
+        a.get find 只能查询一条记录  1,3 模型特有 2,4 db特有  模型都可以使用
+            all select 返回一组
+    3.关联模型
+        banner->banner_item 一对多
+        banner_item->image 一对一
+        嵌套关联

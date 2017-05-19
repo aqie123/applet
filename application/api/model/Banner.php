@@ -7,23 +7,31 @@
 
 namespace app\api\model;
 
-
+use think\Db;
 use think\Exception;
+use think\Model;
 
-class Banner
+class Banner extends Model
 {
+    // protected $table = "Banner_item";  对应表名
     public static function getBannerById($id){
+        // $result = Db::query('select * from banner_item where banner_id = ?',[$id]);  // query 查询
+        // $result = Db::table('banner_item')->where('banner_id','=',$id)->select();
+        // where(字段名,表达式,查询条件)  表达式，数组，闭包
+        $result = Db::table('banner_item')
+            // ->fetchSql() // 生成sql语句
+            ->where(function($query) use ($id){
+            $query->where('banner_id','=',$id);
+        })->select();
+         return $result;
+         // return null;  // 抛出异常
+    }
 
-        //todo 根据banner id 号 获取banner信息
-        /*
-        try{
-            1 / 0;    // 抛出错误
-        }catch(Exception $e){
-            // todo 记录日志
-            throw $e;
-        }
-        return "banner info";
-        */
-        return null;
+    /**
+     * 关联表 (关联模型，外键，主键id)
+     * @return \think\model\relation\HasMany
+     */
+    public function items(){
+        return $this->hasMany('BannerItem','banner_id','id');
     }
 }

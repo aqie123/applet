@@ -7,7 +7,7 @@
 
 namespace app\lib\exception;
 
-use Exception;
+use Exception;   // 基类Exception
 use think\exception\Handle;
 use think\Request;
 use think\Log;
@@ -28,7 +28,8 @@ class ExceptionHandler extends Handle
      * @param Exception $e
      * @return \think\Response （返回客户端当前请求的URL路径）
      */
-    public function render(Exception $e)
+
+    public function render(\Exception $e)
     {
         // return json("-----错误------"); // 测试自定义异常
         if($e instanceof BaseException){
@@ -37,12 +38,18 @@ class ExceptionHandler extends Handle
             $this->msg = $e->msg;
             $this->errorCode = $e->errorCode;
         }else{
-            // 服务器自身异常
-            $this->code = 500;
-            $this->msg = "服务器内部错误，不告诉你";
-            $this->errorCode = 999;
-            // 将服务器错误记录到日志
-            $this->recordErrorLog($e);
+            if(config('app_debug')){  // 调试模式显示自带错误页面
+                // return default error page 调用父类方法
+                return parent::render($e);
+            }else{
+                // 服务器自身异常
+                $this->code = 500;
+                $this->msg = "服务器内部错误，不告诉你";
+                $this->errorCode = 999;
+                // 将服务器错误记录到日志
+                $this->recordErrorLog($e);
+            }
+
         }
         // 获取当前请求url
         $request = Request::instance();
@@ -53,7 +60,8 @@ class ExceptionHandler extends Handle
         ];
         return json($result,$this->code);
     }
-    private function recordErrorLog(Exception $e){
+
+    private function recordErrorLog(\Exception $e){
         // 初始化日志
         Log::init([
             'type' => 'File',

@@ -38,48 +38,22 @@ class Banner
      * @http GET
      * @param $id (传入不同ID获取banner)
      * @return mixed (返回轮播图信息)
+     * @throws BannerMissException
      */
     public function getBanner($id){
-        /*
-        $data = [
-            'id' => $id
-        ];
-
-        $validate = new Validate([
-            'id' =>'',
-        ]);
-
-        $validate = new IdMustBePositiveInt();
-        $result = $validate->batch()->check($data);
-        if($result){
-
-        }else{
-
-        }
-        */
+        // AOP面向切面编程
         $validate = new IDMustBePositiveInt();
         $validate->goCheck();
-        /*
-        try{
-            $banner = BannerModel::getBannerById($id);
-        }catch(Exception $e){
+         $banner = BannerModel::with(["items",'items.img'])->find($id);  // 变成模型 直接调用基类方法 (推荐静态)
+        // get find  all select
+        // $banner = new BannerModel();  $banner = $banner->get($id); // 实例化
 
-            // 自定义错误返回
-            $err = [
-                'error_code' => 10001,
-                'msg' => $e->getMessage()
-            ];
-             return json($err,400);  // 直接返回数组会报错 同时指定状态码
-
-        }
-        */
-        $banner = BannerModel::getBannerById($id); // 测试抛出异常经过ExceptionHandler/render方法
+        // $banner = BannerModel::getBannerById($id); // 测试抛出异常经过ExceptionHandler/render方法
         if(!$banner){
-            // log('error');
-            // 抛出自定义异常
+            //自定义错误
              throw new BannerMissException();
-            // throw new Exception("服务器异常,内部错误");
+            // throw new Exception("服务器内部错误aqie");
         }
-        return $banner;
+        return $banner; // 变成模型后会自动序列化成json
     }
 }

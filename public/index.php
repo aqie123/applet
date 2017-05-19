@@ -17,3 +17,10 @@ define('APP_PATH', __DIR__ . '/../application/');
 define('LOG_PATH', __DIR__. '/../log/');
 // 加载框架引导文件
 require __DIR__ . '/../thinkphp/start.php';
+
+// 配置文件关闭日志后再初始化sql日志
+\think\Log::init([
+    'type' => 'File',
+    'path' => LOG_PATH,
+    'level' => ['sql']
+]);

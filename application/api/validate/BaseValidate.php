@@ -8,6 +8,7 @@
 namespace app\api\validate;
 
 
+use app\lib\exception\ParameterException;
 use think\Exception;
 use think\Request;
 use think\Validate;
@@ -20,12 +21,17 @@ class BaseValidate extends Validate
         // http://z.cn/banner/123     Route::get('banner/:id',"api/v1.Banner/getBanner");
         $request = Request::instance();
         $params = $request->param();
-        $result = $this->check($params);
+        // 批量验证错误
+        $result = $this->batch()->check($params);
         // var_dump($result);   // true
         if(!$result){
-            //getError();
-            $error = $this->error;
-            throw new Exception($error);   // 保证验证规则正确
+            // 保证验证规则正确  应该抛出自定义异常
+            $e = new ParameterException([  // 使用构造函数代替
+                'msg' => $this->error,
+            ]);
+            // 获取当前错误
+            // $e->msg = $this->error;
+            throw $e;  // throw 必须是异常
         }else{
             return true;
         }

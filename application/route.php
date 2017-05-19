@@ -42,5 +42,6 @@ Route::rule("list/:id","index/Lists/list"); // any => *  post传参
 /**
  * 小程序路由开始 第一次写API
  */
-// 规范加api/版本号
+// 规范加api/版本号 z.cn/api/v1/banner/1
+
 Route::get('api/v1/banner/:id',"api/v1.Banner/getBanner");  // 注意访问方式
