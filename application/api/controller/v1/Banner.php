@@ -44,11 +44,14 @@ class Banner
         // AOP面向切面编程
         $validate = new IDMustBePositiveInt();
         $validate->goCheck();
-         $banner = BannerModel::with(["items",'items.img'])->find($id);  // 变成模型 直接调用基类方法 (推荐静态)
+
         // get find  all select
         // $banner = new BannerModel();  $banner = $banner->get($id); // 实例化
 
-        // $banner = BannerModel::getBannerById($id); // 测试抛出异常经过ExceptionHandler/render方法
+         $banner = BannerModel::getBannerById($id); // 测试抛出异常经过ExceptionHandler/render方法
+        $data = $banner->toArray();
+        // $banner->hidden(['delete_time','update_time']);   隐藏字段 (更好在模型中隐藏)
+        // $banner->visible(['id','name']);                  显示字段
         if(!$banner){
             //自定义错误
              throw new BannerMissException();

@@ -1,0 +1,1434 @@
+---------------------------------------------------------------
+[ 2017-05-19T07:41:23+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/12s3/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/12s3/?XDEBUG_SESSION_START=16457 [运行时间：0.878050s][吞吐率：1.14req/s] [内存消耗：1,176.41kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'd018fbec-d4fc-4120-8840-2f04af3bd4cf',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/12s3/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '12s3',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Too few arguments to function think\Validate::check(), 0 passed in F:\applet\application\api\validate\BaseValidate.php on line 22 and at least 1 expected[F:\applet\thinkphp\library\think\Validate.php:252]
+---------------------------------------------------------------
+[ 2017-05-19T07:43:10+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/12s3/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/12s3/?XDEBUG_SESSION_START=16457 [运行时间：0.089005s][吞吐率：11.24req/s] [内存消耗：1,176.27kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '9c9435b0-e32a-4026-a94d-7d00509df7ee',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/12s3/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '12s3',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method app\api\validate\IdMustBePositiveInt::error()[F:\applet\application\api\validate\BaseValidate.php:25]
+---------------------------------------------------------------
+[ 2017-05-19T07:44:49+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/12s3/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/12s3/?XDEBUG_SESSION_START=16457 [运行时间：0.089005s][吞吐率：11.24req/s] [内存消耗：1,173.19kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '8a41baa2-6706-456e-a138-3fa73891c2d7',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/12s3/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '12s3',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:26]
+---------------------------------------------------------------
+[ 2017-05-19T07:45:11+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：0.063004s][吞吐率：15.87req/s] [内存消耗：1,173.19kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '1bdca56c-693b-4399-a95b-6367972174b6',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:26]
+---------------------------------------------------------------
+[ 2017-05-19T07:45:13+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：0.063004s][吞吐率：15.87req/s] [内存消耗：1,173.19kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'c1f0bd47-3cba-46d9-a19a-0ab476494194',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:26]
+---------------------------------------------------------------
+[ 2017-05-19T07:45:52+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/1/?XDEBUG_SESSION_START=16457 [运行时间：0.063003s][吞吐率：15.87req/s] [内存消耗：1,173.17kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '11ff3c0a-ecc1-4000-9034-14b13a155a09',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/1/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:26]
+---------------------------------------------------------------
+[ 2017-05-19T07:47:14+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/1/?XDEBUG_SESSION_START=16457 [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：1,173.17kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '845d805c-96f1-4d77-9d41-68092de17e43',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/1/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:26]
+---------------------------------------------------------------
+[ 2017-05-19T07:47:15+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/1/?XDEBUG_SESSION_START=16457 [运行时间：0.069004s][吞吐率：14.49req/s] [内存消耗：1,173.17kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '590ae049-830c-4934-9af0-8c2cd0223452',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/1/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:26]
+---------------------------------------------------------------
+[ 2017-05-19T07:48:58+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/1/?XDEBUG_SESSION_START=16457 [运行时间：0.069004s][吞吐率：14.49req/s] [内存消耗：1,173.17kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '39fbd92b-b96c-4ec1-b38d-7dafbd5838c1',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/1/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:26]
+---------------------------------------------------------------
+[ 2017-05-19T07:49:00+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/1/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/1/?XDEBUG_SESSION_START=16457 [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：1,173.17kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '84156f57-15a4-44fc-bf19-a4bf8593cd22',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/1/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:26]
+---------------------------------------------------------------
+[ 2017-05-19T08:43:14+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] z.cn/ [运行时间：1.050060s][吞吐率：0.95req/s] [内存消耗：944.97kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+ ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123' => '',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:26]
+---------------------------------------------------------------
+[ 2017-05-19T08:44:50+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123
+[ info ] z.cn/banner/123 [运行时间：0.045003s][吞吐率：22.22req/s] [内存消耗：991.76kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123' => '',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-19T08:44:54+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123
+[ info ] z.cn/banner/123 [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：991.76kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123' => '',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-19T08:45:07+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123
+[ info ] z.cn/banner/123 [运行时间：0.046003s][吞吐率：21.74req/s] [内存消耗：992.09kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123' => '',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-19T08:59:56+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123
+[ info ] z.cn/banner/123 [运行时间：0.098006s][吞吐率：10.20req/s] [内存消耗：992.14kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123' => '',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-19T09:19:53+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123
+[ info ] z.cn/banner/123 [运行时间：0.043003s][吞吐率：23.25req/s] [内存消耗：992.15kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123' => '',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-19T09:20:03+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123
+[ info ] z.cn/banner/123 [运行时间：0.047002s][吞吐率：21.28req/s] [内存消耗：992.15kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123' => '',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-19T09:20:04+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123
+[ info ] z.cn/banner/123 [运行时间：0.046003s][吞吐率：21.74req/s] [内存消耗：991.86kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123' => '',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-19T09:20:05+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123
+[ info ] z.cn/banner/123 [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：991.86kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123' => '',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-19T09:20:06+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123
+[ info ] z.cn/banner/123 [运行时间：0.048003s][吞吐率：20.83req/s] [内存消耗：991.86kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123' => '',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-19T09:20:07+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123
+[ info ] z.cn/banner/123 [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：991.86kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123' => '',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-19T09:20:08+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123
+[ info ] z.cn/banner/123 [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：991.86kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123' => '',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-19T09:20:08+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123
+[ info ] z.cn/banner/123 [运行时间：0.049002s][吞吐率：20.41req/s] [内存消耗：991.86kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123' => '',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-19T09:27:00+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123
+[ info ] z.cn/banner/123 [运行时间：0.046002s][吞吐率：21.74req/s] [内存消耗：991.99kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123' => '',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-19T09:27:34+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：24.806418s][吞吐率：0.04req/s] [内存消耗：992.29kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '734cedf3-87ff-4167-b1c3-54f0c1a191d8',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-19T09:27:36+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：1.599091s][吞吐率：0.63req/s] [内存消耗：992.29kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '76440a98-2074-4706-be1f-28d1181b6d29',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-19T09:31:44+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：244.202968s][吞吐率：0.00req/s] [内存消耗：993.10kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '3a993ae3-64ce-4c88-b24a-dc935e5c757e',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-19T09:31:45+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：1.566089s][吞吐率：0.64req/s] [内存消耗：1,174.70kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '0ad99da7-0d5a-4009-88d6-82acb3db303d',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:26]
+---------------------------------------------------------------
+[ 2017-05-19T09:32:10+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：17.997030s][吞吐率：0.06req/s] [内存消耗：1,174.70kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'cda6039b-e885-47e1-95d5-28552c995845',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:26]
+---------------------------------------------------------------
+[ 2017-05-19T09:32:11+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：0.896051s][吞吐率：1.12req/s] [内存消耗：1,174.84kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '841ba782-2642-47f8-8968-fd122c34fedd',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:27]
+---------------------------------------------------------------
+[ 2017-05-19T09:32:20+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：4.058233s][吞吐率：0.25req/s] [内存消耗：1,175.65kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '66712dd2-7689-4706-a469-a9496c9efc50',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:27]
+---------------------------------------------------------------
+[ 2017-05-19T09:33:07+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：43.597493s][吞吐率：0.02req/s] [内存消耗：1,176.02kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '82210b9d-37c7-4cd9-94da-67eb7a0b77f1',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:27]
+---------------------------------------------------------------
+[ 2017-05-19T09:33:47+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123
+[ info ] z.cn/banner/123 [运行时间：0.064004s][吞吐率：15.62req/s] [内存消耗：1,174.47kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123' => '',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:27]
+---------------------------------------------------------------
+[ 2017-05-19T09:37:20+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：252.472441s][吞吐率：0.00req/s] [内存消耗：1,178.09kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '3f8b0600-0cb5-45d0-b1c3-508239e6a22b',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:27]
+---------------------------------------------------------------
+[ 2017-05-19T09:37:21+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：1.552089s][吞吐率：0.64req/s] [内存消耗：1,174.80kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'c08787ff-b71f-4de8-b6a6-f51536df5260',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:27]
+---------------------------------------------------------------
+[ 2017-05-19T09:37:23+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：0.957055s][吞吐率：1.04req/s] [内存消耗：1,174.80kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'fa74e323-b592-4858-828c-b20f5628859e',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:27]
+---------------------------------------------------------------
+[ 2017-05-19T09:37:23+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/0.1/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/0.1/?XDEBUG_SESSION_START=16457 [运行时间：0.611035s][吞吐率：1.64req/s] [内存消耗：1,174.80kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '07f82a8b-eaab-4d7f-9288-e10f887eee07',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/0_1/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '0.1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:27]
+---------------------------------------------------------------
+[ 2017-05-19T09:51:28+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/0.1/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/0.1/?XDEBUG_SESSION_START=16457 [运行时间：77.327423s][吞吐率：0.01req/s] [内存消耗：1,176.16kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '0de4dcb7-03fe-4682-886b-46fca64ec9f5',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/0_1/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '0.1',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:27]
+---------------------------------------------------------------
+[ 2017-05-19T09:51:32+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：3.507200s][吞吐率：0.29req/s] [内存消耗：1,175.92kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '462dfdf4-5777-488b-834a-89ec384208d4',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:27]
+---------------------------------------------------------------
+[ 2017-05-19T09:56:28+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：291.013645s][吞吐率：0.00req/s] [内存消耗：1,176.13kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '9f1d2963-72ca-40af-be95-f114a534a7db',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:27]
+---------------------------------------------------------------
+[ 2017-05-19T10:01:29+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：5.138293s][吞吐率：0.19req/s] [内存消耗：1,175.92kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '287815a0-c7eb-4fbc-b933-253f8fad4014',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:27]
+---------------------------------------------------------------
+[ 2017-05-19T10:03:16+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：94.565408s][吞吐率：0.01req/s] [内存消耗：1,174.80kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '07d26fc3-b151-4299-9f4c-9fd0df31d6bc',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:27]
+---------------------------------------------------------------
+[ 2017-05-19T10:04:02+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：45.621609s][吞吐率：0.02req/s] [内存消耗：1,175.36kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'fe82a58e-5beb-4e0c-ae4f-3a6cf50a66c7',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:28]
+---------------------------------------------------------------
+[ 2017-05-19T10:06:25+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：142.673161s][吞吐率：0.01req/s] [内存消耗：1,175.77kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '2ab6881a-7c26-478a-b1e6-66e5499c6ebd',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]id规则错误[F:\applet\application\api\validate\BaseValidate.php:28]
+---------------------------------------------------------------
+[ 2017-05-19T10:07:19+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=16457 [运行时间：12.299704s][吞吐率：0.08req/s] [内存消耗：1,180.78kb] [文件加载：36]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'b9650f79-dca1-428c-bbde-3b01feadde25',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '16457',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Division by zero[F:\applet\application\api\model\Banner.php:19]
+---------------------------------------------------------------
+[ 2017-05-19T10:13:22+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123
+[ info ] z.cn/banner/123 [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：1,179.35kb] [文件加载：36]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123' => '',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Division by zero[F:\applet\application\api\model\Banner.php:19]
+---------------------------------------------------------------
+[ 2017-05-19T10:14:17+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123
+[ error ] [2]Division by zero
+---------------------------------------------------------------
+[ 2017-05-19T10:15:55+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ error ] [2]Division by zero
+---------------------------------------------------------------
+[ 2017-05-19T10:22:05+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ error ] [0]variable type error： array
+---------------------------------------------------------------
+[ 2017-05-19T11:19:06+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ error ] [2]Division by zero
+---------------------------------------------------------------
+[ 2017-05-19T11:23:24+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ error ] [2]Division by zero
+---------------------------------------------------------------
+[ 2017-05-19T11:39:33+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ error ] [2]Division by zero
+---------------------------------------------------------------
+[ 2017-05-19T11:49:23+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ error ] [404]
+---------------------------------------------------------------
+[ 2017-05-19T11:56:32+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=16457
+[ error ] [2]log() expects parameter 1 to be float, string given

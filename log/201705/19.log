@@ -1,0 +1,50 @@
+---------------------------------------------------------------
+[ 2017-05-19T22:25:12+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1?XDEBUG_SESSION_START=12611
+[ info ] z.cn/api/v1/banner/1?XDEBUG_SESSION_START=12611 [运行时间：0.093006s][吞吐率：10.75req/s] [内存消耗：1,855.38kb] [文件加载：40]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  (  `banner_id` = 1 ) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-05-19T22:42:23+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1/?XDEBUG_SESSION_START=19228
+[ info ] z.cn/api/v1/banner/1/?XDEBUG_SESSION_START=19228 [运行时间：0.329018s][吞吐率：3.04req/s] [内存消耗：2,099.87kb] [文件加载：41]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007001s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098006s ]
+---------------------------------------------------------------
+[ 2017-05-19T22:46:48+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1/?XDEBUG_SESSION_START=19228
+[ info ] z.cn/api/v1/banner/1/?XDEBUG_SESSION_START=19228 [运行时间：0.120007s][吞吐率：8.33req/s] [内存消耗：2,095.46kb] [文件加载：40]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-05-19T22:48:23+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1/?XDEBUG_SESSION_START=19228
+[ info ] z.cn/api/v1/banner/1/?XDEBUG_SESSION_START=19228 [运行时间：0.101006s][吞吐率：9.90req/s] [内存消耗：2,099.51kb] [文件加载：41]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-05-19T22:57:17+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1/?XDEBUG_SESSION_START=19228
+[ info ] z.cn/api/v1/banner/1/?XDEBUG_SESSION_START=19228 [运行时间：0.196012s][吞吐率：5.10req/s] [内存消耗：2,100.60kb] [文件加载：41]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Banner_item` [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SELECT * FROM `Banner_item` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-05-19T22:57:23+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1/?XDEBUG_SESSION_START=19228
+[ info ] z.cn/api/v1/banner/1/?XDEBUG_SESSION_START=19228 [运行时间：0.133007s][吞吐率：7.52req/s] [内存消耗：2,100.60kb] [文件加载：41]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Banner_item` [ RunTime:0.037002s ]
+[ sql ] [ SQL ] SELECT * FROM `Banner_item` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2017-05-19T23:07:28+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1/?XDEBUG_SESSION_START=19228
+[ info ] z.cn/api/v1/banner/1/?XDEBUG_SESSION_START=19228 [运行时间：0.112006s][吞吐率：8.93req/s] [内存消耗：2,099.78kb] [文件加载：41]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2017-05-19T23:51:04+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1/?XDEBUG_SESSION_START=19228
+[ info ] z.cn/api/v1/banner/1/?XDEBUG_SESSION_START=19228 [运行时间：0.218013s][吞吐率：4.59req/s] [内存消耗：2,147.27kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=zerg;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.027002s ]

@@ -1,0 +1,423 @@
+---------------------------------------------------------------
+[ 2017-05-16T16:58:25+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/index/hello
+[ info ] www.applet.com/index.php/index/index/hello [运行时间：3.372193s][吞吐率：0.30req/s] [内存消耗：1,266.69kb] [文件加载：37]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.aqie.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-16T16:58:29+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/list/index
+[ info ] www.applet.com/index.php/index/list/index [运行时间：0.046003s][吞吐率：21.74req/s] [内存消耗：944.09kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'list',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-16T16:58:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/lists/index
+[ info ] www.applet.com/index.php/index/lists/index [运行时间：0.854049s][吞吐率：1.17req/s] [内存消耗：1,288.37kb] [文件加载：39]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Lists->index[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class 'app\index\controller\Response' not found[F:\applet\application\index\controller\Lists.php:16]
+---------------------------------------------------------------
+[ 2017-05-16T16:59:27+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/lists/index
+[ info ] www.applet.com/index.php/index/lists/index [运行时间：0.078005s][吞吐率：12.82req/s] [内存消耗：1,288.77kb] [文件加载：39]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Lists->index[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class 'app\index\controller\Response' not found[F:\applet\application\index\controller\Lists.php:16]
+---------------------------------------------------------------
+[ 2017-05-16T16:59:34+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/lists/index
+[ info ] www.applet.com/index.php/index/lists/index [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：1,288.77kb] [文件加载：39]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Lists->index[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class 'app\index\controller\Response' not found[F:\applet\application\index\controller\Lists.php:16]
+---------------------------------------------------------------
+[ 2017-05-16T16:59:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/lists/index
+[ info ] www.applet.com/index.php/index/lists/index [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：1,288.77kb] [文件加载：39]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Lists->index[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class 'app\index\controller\Response' not found[F:\applet\application\index\controller\Lists.php:16]
+---------------------------------------------------------------
+[ 2017-05-16T16:59:39+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/lists/index
+[ info ] www.applet.com/index.php/index/lists/index [运行时间：0.134008s][吞吐率：7.46req/s] [内存消耗：1,288.77kb] [文件加载：39]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Lists->index[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class 'app\index\controller\Response' not found[F:\applet\application\index\controller\Lists.php:16]
+---------------------------------------------------------------
+[ 2017-05-16T17:00:14+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/test/response
+[ info ] www.applet.com/index.php/index/test/response [运行时间：0.076005s][吞吐率：13.16req/s] [内存消耗：1,104.96kb] [文件加载：33]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'response',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Test->response[ F:\applet\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-16T17:00:52+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/lists/index
+[ info ] www.applet.com/index.php/index/lists/index [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：1,288.77kb] [文件加载：39]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Lists->index[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class 'app\index\controller\Response' not found[F:\applet\application\index\controller\Lists.php:16]
+---------------------------------------------------------------
+[ 2017-05-16T17:00:54+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/lists/index
+[ info ] www.applet.com/index.php/index/lists/index [运行时间：0.075005s][吞吐率：13.33req/s] [内存消耗：1,278.79kb] [文件加载：38]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Lists->index[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class 'app\index\controller\Response' not found[F:\applet\application\index\controller\Lists.php:16]
+---------------------------------------------------------------
+[ 2017-05-16T17:01:46+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/lists/index
+[ info ] www.applet.com/index.php/index/lists/index [运行时间：0.066003s][吞吐率：15.15req/s] [内存消耗：1,288.40kb] [文件加载：39]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Lists->index[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method my\Response::show()[F:\applet\application\index\controller\Lists.php:16]
+---------------------------------------------------------------
+[ 2017-05-16T17:02:22+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/lists/index
+[ info ] www.applet.com/index.php/index/lists/index [运行时间：0.061004s][吞吐率：16.39req/s] [内存消耗：1,288.40kb] [文件加载：39]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Lists->index[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method my\Response::show()[F:\applet\application\index\controller\Lists.php:16]
+---------------------------------------------------------------
+[ 2017-05-16T17:02:25+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/lists/index
+[ info ] www.applet.com/index.php/index/lists/index [运行时间：0.055004s][吞吐率：18.18req/s] [内存消耗：1,104.22kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Lists->index[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-16T17:03:07+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/lists/index
+[ info ] www.applet.com/index.php/index/lists/index [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：1,103.76kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Lists->index[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-16T17:04:06+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/test/response/xml
+[ info ] www.applet.com/index.php/index/test/response/xml [运行时间：0.045003s][吞吐率：22.22req/s] [内存消耗：1,104.98kb] [文件加载：33]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'response',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Test->response[ F:\applet\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File

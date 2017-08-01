@@ -1,0 +1,48 @@
+[ 2017-05-15T12:01:34+08:00 ][ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+[ 2017-05-15T12:01:34+08:00 ][ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ 2017-05-15T12:01:34+08:00 ][ info ] [ HEADER ] array (
+)
+[ 2017-05-15T12:01:34+08:00 ][ info ] [ PARAM ] array (
+)
+[ 2017-05-15T12:01:34+08:00 ][ info ] [ RUN ] app\index\controller\Index->index[ F:\applet\application\index\controller\Index.php ]
+[ 2017-05-15T12:01:34+08:00 ][ error ] [0]variable type error： array[F:\applet\thinkphp\library\think\Response.php:316]
+[ 2017-05-15T12:01:53+08:00 ][ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+[ 2017-05-15T12:01:53+08:00 ][ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hellp',
+  ),
+)
+[ 2017-05-15T12:01:53+08:00 ][ info ] [ HEADER ] array (
+)
+[ 2017-05-15T12:01:53+08:00 ][ info ] [ PARAM ] array (
+)
+[ 2017-05-15T12:02:04+08:00 ][ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+[ 2017-05-15T12:02:04+08:00 ][ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hello',
+  ),
+)
+[ 2017-05-15T12:02:04+08:00 ][ info ] [ HEADER ] array (
+)
+[ 2017-05-15T12:02:04+08:00 ][ info ] [ PARAM ] array (
+)
+[ 2017-05-15T12:02:04+08:00 ][ info ] [ RUN ] app\index\controller\Index->hello[ F:\applet\application\index\controller\Index.php ]

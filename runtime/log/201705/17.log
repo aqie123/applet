@@ -1,0 +1,1833 @@
+---------------------------------------------------------------
+[ 2017-05-17T09:34:10+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/index/hello
+[ info ] www.applet.com/index.php/index/index/hello [运行时间：1.488085s][吞吐率：0.67req/s] [内存消耗：1,266.70kb] [文件加载：37]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.aqie.com/index.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T09:35:35+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php
+[ info ] www.applet.com/index.php [运行时间：0.058004s][吞吐率：17.24req/s] [内存消耗：1,156.13kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\applet\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T09:36:04+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/index/test/hello
+[ info ] www.applet.com/index.php/index/test/hello [运行时间：0.231013s][吞吐率：4.33req/s] [内存消耗：1,232.05kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.aqie.com/index.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Test->hello[ F:\applet\application\index\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T13:01:22+08:00 ] 0.0.0.0 ::1 GET /
+[ info ] localhost:8080/ [运行时间：0.738043s][吞吐率：1.35req/s] [内存消耗：991.95kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-1c27063e=b6a9569f-2799-447c-98c1-3ec9d38120af; Phpstorm-40ae1d9f=46fb4d66-3fff-4801-b9f2-dc7a595cf433; XDEBUG_SESSION=PHPSTORM; _ga=GA1.1.1714931098.1488160811',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\applet\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T13:04:01+08:00 ] 0.0.0.0 ::1 GET /
+[ info ] localhost:8080/ [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：991.95kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-1c27063e=b6a9569f-2799-447c-98c1-3ec9d38120af; Phpstorm-40ae1d9f=46fb4d66-3fff-4801-b9f2-dc7a595cf433; XDEBUG_SESSION=PHPSTORM; _ga=GA1.1.1714931098.1488160811',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\applet\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T13:04:23+08:00 ] 0.0.0.0 ::1 GET /
+[ info ] localhost:8080/ [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：991.98kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:8080',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-1c27063e=b6a9569f-2799-447c-98c1-3ec9d38120af; Phpstorm-40ae1d9f=46fb4d66-3fff-4801-b9f2-dc7a595cf433; XDEBUG_SESSION=PHPSTORM; _ga=GA1.1.1714931098.1488160811',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\applet\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T13:26:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php?XDEBUG_SESSION_START=14839
+[ info ] www.applet.com/index.php?XDEBUG_SESSION_START=14839 [运行时间：0.918052s][吞吐率：1.09req/s] [内存消耗：1,156.27kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+  'XDEBUG_SESSION_START' => '14839',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\applet\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T13:28:40+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php?XDEBUG_SESSION_START=14839
+[ info ] www.applet.com/index.php?XDEBUG_SESSION_START=14839 [运行时间：60.974488s][吞吐率：0.02req/s] [内存消耗：1,158.14kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672; XDEBUG_SESSION=14839',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+  'XDEBUG_SESSION_START' => '14839',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\applet\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T13:57:03+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/sample/test/hello
+[ info ] www.applet.com/index.php/sample/test/hello [运行时间：0.411024s][吞吐率：2.43req/s] [内存消耗：898.44kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'test',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672; XDEBUG_SESSION=14839',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T13:59:09+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/sample/test/hello
+[ info ] www.applet.com/index.php/sample/test/hello [运行时间：0.061004s][吞吐率：16.39req/s] [内存消耗：898.44kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'test',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672; XDEBUG_SESSION=14839',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T13:59:11+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/sample/test/hello
+[ info ] www.applet.com/index.php/sample/test/hello [运行时间：0.046002s][吞吐率：21.74req/s] [内存消耗：898.55kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'test',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=2486812672; XDEBUG_SESSION=14839',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T14:09:29+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] z.cn/ [运行时间：0.187011s][吞吐率：5.35req/s] [内存消耗：1,156.10kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.aqie.com/index.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\applet\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T14:14:03+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] z.cn/ [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：1,155.97kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\applet\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T14:14:18+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/sample/test/hello
+[ info ] z.cn/index.php/sample/test/hello [运行时间：0.043002s][吞吐率：23.25req/s] [内存消耗：898.65kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'test',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T14:15:40+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] z.cn/ [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,155.97kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\applet\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T14:18:29+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] z.cn/ [运行时间：0.059003s][吞吐率：16.95req/s] [内存消耗：1,155.97kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\applet\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T14:19:00+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/sample/test/hello
+[ info ] z.cn/index.php/sample/test/hello [运行时间：0.042002s][吞吐率：23.81req/s] [内存消耗：898.65kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'test',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T14:22:18+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/sample/test/hello
+[ info ] z.cn/index.php/sample/test/hello [运行时间：0.066004s][吞吐率：15.15req/s] [内存消耗：898.77kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'test',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T14:33:40+08:00 ] 127.0.0.1 127.0.0.1 GET /index.php/sample/test/hello
+[ info ] z.cn/index.php/sample/test/hello [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：898.65kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'test',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T14:38:04+08:00 ] 127.0.0.1 127.0.0.1 GET /sample/test/hello
+[ info ] z.cn/sample/test/hello [运行时间：0.491028s][吞吐率：2.04req/s] [内存消耗：900.81kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'test',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/sample/test/hello' => '',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T14:41:02+08:00 ] ::1 ::1 GET /
+[ info ] localhost/ [运行时间：0.187011s][吞吐率：5.35req/s] [内存消耗：1,156.37kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Phpstorm-1c27063e=b6a9569f-2799-447c-98c1-3ec9d38120af; Phpstorm-40ae1d9f=46fb4d66-3fff-4801-b9f2-dc7a595cf433; XDEBUG_SESSION=PHPSTORM; _ga=GA1.1.1714931098.1488160811',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\applet\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T14:41:11+08:00 ] ::1 ::1 GET /sample/test/hello
+[ info ] localhost/sample/test/hello [运行时间：0.064003s][吞吐率：15.62req/s] [内存消耗：901.09kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'test',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Phpstorm-1c27063e=b6a9569f-2799-447c-98c1-3ec9d38120af; Phpstorm-40ae1d9f=46fb4d66-3fff-4801-b9f2-dc7a595cf433; XDEBUG_SESSION=PHPSTORM; _ga=GA1.1.1714931098.1488160811',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '/sample/test/hello' => '',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T14:58:27+08:00 ] 127.0.0.1 127.0.0.1 GET /sample/test/hello
+[ info ] z.cn/sample/test/hello [运行时间：0.821047s][吞吐率：1.22req/s] [内存消耗：900.14kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'test',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'postman-token' => '3712187d-8073-43be-9c03-75bd226499f5',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/sample/test/hello' => '',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:12:21+08:00 ] 127.0.0.1 127.0.0.1 GET /hello
+[ info ] z.cn/hello [运行时间：0.042002s][吞吐率：23.81req/s] [内存消耗：898.44kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/hello' => '',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:14:10+08:00 ] 127.0.0.1 127.0.0.1 GET /sample/test/hello
+[ info ] z.cn/sample/test/hello [运行时间：0.271015s][吞吐率：3.69req/s] [内存消耗：939.09kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:21:31+08:00 ] 127.0.0.1 127.0.0.1 GET /sample/test/hello
+[ info ] z.cn/sample/test/hello [运行时间：0.076004s][吞吐率：13.16req/s] [内存消耗：940.92kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:21:42+08:00 ] 127.0.0.1 127.0.0.1 GET /hello
+[ info ] z.cn/hello [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：897.89kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '18f1d839-95f6-47d6-bc55-813a3912c478',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/hello' => '',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:21:45+08:00 ] 127.0.0.1 127.0.0.1 POST /hello
+[ info ] z.cn/hello [运行时间：0.046002s][吞吐率：21.74req/s] [内存消耗：897.52kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '539acd2a-b09c-459d-a310-0eecd0a73611',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/hello' => '',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:21:57+08:00 ] 127.0.0.1 127.0.0.1 PUT /hello
+[ info ] z.cn/hello [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：897.99kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '28f697bf-323b-4a1d-8e56-d39362398493',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/hello' => '',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:22:02+08:00 ] 127.0.0.1 127.0.0.1 DELETE /hello
+[ info ] z.cn/hello [运行时间：0.040002s][吞吐率：25.00req/s] [内存消耗：897.99kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '45415ff8-8b69-48ea-a691-75b5733b71ca',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/hello' => '',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:23:09+08:00 ] 127.0.0.1 127.0.0.1 PUT /hello
+[ info ] z.cn/hello [运行时间：0.040003s][吞吐率：25.00req/s] [内存消耗：939.15kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:23:16+08:00 ] 127.0.0.1 127.0.0.1 GET /hello
+[ info ] z.cn/hello [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：896.36kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '2be88825-db41-49f0-815f-1683271edb47',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/hello' => '',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:24:23+08:00 ] 127.0.0.1 127.0.0.1 GET /hello
+[ info ] z.cn/hello [运行时间：0.042002s][吞吐率：23.81req/s] [内存消耗：939.44kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:24:56+08:00 ] 127.0.0.1 127.0.0.1 GET /hello
+[ info ] z.cn/hello [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：939.44kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:25:33+08:00 ] 127.0.0.1 127.0.0.1 GET /hello
+[ info ] z.cn/hello [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：898.24kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '3be7d47a-cd8c-44ea-aaf9-4ba80cb577f2',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/hello' => '',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:25:36+08:00 ] 127.0.0.1 127.0.0.1 PUT /hello
+[ info ] z.cn/hello [运行时间：0.045003s][吞吐率：22.22req/s] [内存消耗：941.03kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:25:38+08:00 ] 127.0.0.1 127.0.0.1 POST /hello
+[ info ] z.cn/hello [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：897.88kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '321c239f-1137-4b11-a6cb-102679aa13cc',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/hello' => '',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:26:46+08:00 ] 127.0.0.1 127.0.0.1 POST /hello
+[ info ] z.cn/hello [运行时间：0.169010s][吞吐率：5.92req/s] [内存消耗：942.97kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: hello[F:\applet\thinkphp\library\think\Route.php:880]
+---------------------------------------------------------------
+[ 2017-05-17T15:26:50+08:00 ] 127.0.0.1 127.0.0.1 GET /hello
+[ info ] z.cn/hello [运行时间：0.040003s][吞吐率：25.00req/s] [内存消耗：898.19kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'c45f1daf-faf3-4864-858c-33ddcdd7158b',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/hello' => '',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:29:59+08:00 ] 127.0.0.1 127.0.0.1 GET /hello/123?aqie
+[ info ] z.cn/hello/123?aqie [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：941.92kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '174e47d3-862c-42b9-8d9a-9f1dd0638b1a',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/hello/123' => '',
+  'aqie' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:id[F:\applet\thinkphp\library\think\App.php:281]
+---------------------------------------------------------------
+[ 2017-05-17T15:30:13+08:00 ] 127.0.0.1 127.0.0.1 GET /hello/123?aqie
+[ info ] z.cn/hello/123?aqie [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：942.34kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/hello/123' => '',
+  'aqie' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:id[F:\applet\thinkphp\library\think\App.php:281]
+---------------------------------------------------------------
+[ 2017-05-17T15:33:08+08:00 ] 127.0.0.1 127.0.0.1 GET /hello/123?aqie
+[ info ] z.cn/hello/123?aqie [运行时间：0.064003s][吞吐率：15.62req/s] [内存消耗：942.42kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/hello/123' => '',
+  'aqie' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:id[F:\applet\thinkphp\library\think\App.php:281]
+---------------------------------------------------------------
+[ 2017-05-17T15:33:09+08:00 ] 127.0.0.1 127.0.0.1 GET /hello/123?aqie
+[ info ] z.cn/hello/123?aqie [运行时间：0.064004s][吞吐率：15.62req/s] [内存消耗：942.42kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/hello/123' => '',
+  'aqie' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:id[F:\applet\thinkphp\library\think\App.php:281]
+---------------------------------------------------------------
+[ 2017-05-17T15:34:18+08:00 ] 127.0.0.1 127.0.0.1 GET /hello/123?aqie
+[ info ] z.cn/hello/123?aqie [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：942.26kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '27f7ac57-18df-4ea1-908e-df8201a73980',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/hello/123' => '',
+  'aqie' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:id[F:\applet\thinkphp\library\think\App.php:281]
+---------------------------------------------------------------
+[ 2017-05-17T15:34:20+08:00 ] 127.0.0.1 127.0.0.1 GET /hello/123?aqie
+[ info ] z.cn/hello/123?aqie [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：942.26kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '68ebc789-a333-4b3d-b619-79c52f5b4468',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/hello/123' => '',
+  'aqie' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:id[F:\applet\thinkphp\library\think\App.php:281]
+---------------------------------------------------------------
+[ 2017-05-17T15:34:23+08:00 ] 127.0.0.1 127.0.0.1 GET /hello/123?aqie
+[ info ] z.cn/hello/123?aqie [运行时间：0.055004s][吞吐率：18.18req/s] [内存消耗：942.80kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/hello/123' => '',
+  'aqie' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:id[F:\applet\thinkphp\library\think\App.php:281]
+---------------------------------------------------------------
+[ 2017-05-17T15:34:25+08:00 ] 127.0.0.1 127.0.0.1 GET /hello/123?aqie
+[ info ] z.cn/hello/123?aqie [运行时间：0.058004s][吞吐率：17.24req/s] [内存消耗：942.80kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/hello/123' => '',
+  'aqie' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:id[F:\applet\thinkphp\library\think\App.php:281]
+---------------------------------------------------------------
+[ 2017-05-17T15:35:00+08:00 ] 127.0.0.1 127.0.0.1 GET /hello/123?aqie
+[ info ] z.cn/hello/123?aqie [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：940.96kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/hello/123' => '',
+  'aqie' => '',
+  'id' => '123',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:name[F:\applet\thinkphp\library\think\App.php:281]
+---------------------------------------------------------------
+[ 2017-05-17T15:36:13+08:00 ] 127.0.0.1 127.0.0.1 GET /hello/123?name=aqie
+[ info ] z.cn/hello/123?name=aqie [运行时间：0.046003s][吞吐率：21.74req/s] [内存消耗：898.12kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/hello/123' => '',
+  'name' => 'aqie',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:36:38+08:00 ] 127.0.0.1 127.0.0.1 GET /hello/123?name=aqie
+[ info ] z.cn/hello/123?name=aqie [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：897.57kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '77720f5c-ed11-4631-92d4-f5b71e889cf6',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/hello/123' => '',
+  'name' => 'aqie',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:36:52+08:00 ] 127.0.0.1 127.0.0.1 GET /hello/123?name=aqie
+[ info ] z.cn/hello/123?name=aqie [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：898.49kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/hello/123' => '',
+  'name' => 'aqie',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:36:54+08:00 ] 127.0.0.1 127.0.0.1 GET /hello/123?name=aqie
+[ info ] z.cn/hello/123?name=aqie [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：898.49kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/hello/123' => '',
+  'name' => 'aqie',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:39:30+08:00 ] 127.0.0.1 127.0.0.1 POST /hello/123?name=aqie
+[ info ] z.cn/hello/123?name=aqie [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：899.59kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------891630030074932508799994',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '352b8825-8e07-4cbb-8bb5-c9478c820d9c',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/hello/123' => '',
+  'name' => 'aqie',
+  'age' => '24',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:43:45+08:00 ] 127.0.0.1 127.0.0.1 POST /request/123?name=aqie
+[ info ] z.cn/request/123?name=aqie [运行时间：0.060003s][吞吐率：16.67req/s] [内存消耗：948.59kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'aqie',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------693850720193003887753531',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '2532f375-3958-4df2-b77f-00d5174aafc8',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/request/123' => '',
+  'name' => 'aqie',
+  'age' => '18',
+  'id' => '123',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:44:02+08:00 ] 127.0.0.1 127.0.0.1 POST /request/123?name=aqie
+[ info ] z.cn/request/123?name=aqie [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：902.48kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'request',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------783963687758288617379917',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '30e1c7a1-2573-4428-9fd7-4a2b82f612b4',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/request/123' => '',
+  'name' => 'aqie',
+  'age' => '18',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->request[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:44:56+08:00 ] 127.0.0.1 127.0.0.1 POST /request/123?name=aqie
+[ info ] z.cn/request/123?name=aqie [运行时间：0.110006s][吞吐率：9.09req/s] [内存消耗：829.31kb] [文件加载：26]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'request',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------806909591573101520650830',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '30ea3e3a-472d-4b94-9235-af735cd738e9',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/request/123' => '',
+  'name' => 'aqie',
+  'age' => '18',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->request[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:45:37+08:00 ] 127.0.0.1 127.0.0.1 POST /request/123?name=aqie
+[ info ] z.cn/request/123?name=aqie [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：829.64kb] [文件加载：26]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'request',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------825160058975459165291197',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '6bbaea1a-2fdf-4786-9e62-2a9b4a6f6dff',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/request/123' => '',
+  'name' => 'aqie',
+  'age' => '18',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->request[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:46:23+08:00 ] 127.0.0.1 127.0.0.1 POST /request/123?name=aqie
+[ info ] z.cn/request/123?name=aqie [运行时间：0.078004s][吞吐率：12.82req/s] [内存消耗：951.35kb] [文件加载：32]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'request',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------859933374287691292332523',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '4e5e847d-a8c2-4ce0-8d7a-5817b5f44f24',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/request/123' => '',
+  'name' => 'aqie',
+  'age' => '18',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->request[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 0[F:\applet\application\sample\Controller\Test.php:26]
+---------------------------------------------------------------
+[ 2017-05-17T15:47:27+08:00 ] 127.0.0.1 127.0.0.1 POST /request/123?name=aqie
+[ info ] z.cn/request/123?name=aqie [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：829.70kb] [文件加载：26]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'request',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------858586421775329841003239',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '221c1d09-f3f6-4a9e-89e2-67390bf91a96',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/request/123' => '',
+  'name' => 'aqie',
+  'age' => '18',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->request[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:47:29+08:00 ] 127.0.0.1 127.0.0.1 POST /request/123?name=aqie
+[ info ] z.cn/request/123?name=aqie [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：829.70kb] [文件加载：26]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'request',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------212574010371264504006603',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'fe4eb566-6970-4212-86fb-35a0e89367d0',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/request/123' => '',
+  'name' => 'aqie',
+  'age' => '18',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->request[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:47:48+08:00 ] 127.0.0.1 127.0.0.1 POST /request/123?name=aqie
+[ info ] z.cn/request/123?name=aqie [运行时间：0.044002s][吞吐率：22.73req/s] [内存消耗：829.66kb] [文件加载：26]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'request',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------043436849218209011289470',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '2ab88c74-ddd7-4d02-b185-fba74ee4976c',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/request/123' => '',
+  'name' => 'aqie',
+  'age' => '18',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->request[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:48:42+08:00 ] 127.0.0.1 127.0.0.1 POST /request/123?name=aqie
+[ info ] z.cn/request/123?name=aqie [运行时间：0.042002s][吞吐率：23.81req/s] [内存消耗：830.13kb] [文件加载：26]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'request',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------481038927596745535640143',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '7d83c7fc-6d18-404a-a14f-fd75546cb994',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/request/123' => '',
+  'name' => 'aqie',
+  'age' => '18',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->request[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:49:56+08:00 ] 127.0.0.1 127.0.0.1 POST /request/123?name=aqie
+[ info ] z.cn/request/123?name=aqie [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：830.45kb] [文件加载：26]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'request',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------075349025324719369403786',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '5c02eab1-b2d7-4033-b21d-c45ba23a8bfa',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/request/123' => '',
+  'name' => 'aqie',
+  'age' => '18',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->request[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:52:24+08:00 ] 127.0.0.1 127.0.0.1 POST /request/123?name=aqie
+[ info ] z.cn/request/123?name=aqie [运行时间：0.045002s][吞吐率：22.22req/s] [内存消耗：830.95kb] [文件加载：26]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'request',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------904835454626811090384571',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'f0aab0b6-3d1d-4056-baec-c29c77cb26bc',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/request/123' => '',
+  'name' => 'aqie',
+  'age' => '18',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->request[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:52:55+08:00 ] 127.0.0.1 127.0.0.1 POST /request/123?name=aqie
+[ info ] z.cn/request/123?name=aqie [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：829.79kb] [文件加载：26]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'request',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------314338974108791444158140',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'bbd9fe37-635d-43da-9ecf-34595308bcee',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/request/123' => '',
+  'name' => 'aqie',
+  'age' => '18',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->request[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:53:38+08:00 ] 127.0.0.1 127.0.0.1 POST /request/123?name=aqie
+[ info ] z.cn/request/123?name=aqie [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：829.44kb] [文件加载：26]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'request',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------506232312829277664178748',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '2d39164f-ab4a-43d1-b593-7fac5dbd25a2',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/request/123' => '',
+  'name' => 'aqie',
+  'age' => '18',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->request[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:53:39+08:00 ] 127.0.0.1 127.0.0.1 POST /request/123?name=aqie
+[ info ] z.cn/request/123?name=aqie [运行时间：0.041003s][吞吐率：24.39req/s] [内存消耗：829.44kb] [文件加载：26]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'request',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------109499063836149906687782',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'abfda11e-955c-46b8-8895-82a4feacca87',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/request/123' => '',
+  'name' => 'aqie',
+  'age' => '18',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->request[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-17T15:57:19+08:00 ] 127.0.0.1 127.0.0.1 POST /rely/123?name=aqie
+[ info ] z.cn/rely/123?name=aqie [运行时间：0.045003s][吞吐率：22.22req/s] [内存消耗：904.00kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'rely',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------338112542706883564332320',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '14f98a74-dd7e-45de-a125-69e3cad749ab',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/rely/123' => '',
+  'name' => 'aqie',
+  'age' => '18',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->rely[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File

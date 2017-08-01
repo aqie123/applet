@@ -1,0 +1,2221 @@
+---------------------------------------------------------------
+[ 2017-05-18T20:37:45+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] z.cn/ [运行时间：5.122293s][吞吐率：0.20req/s] [内存消耗：941.26kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T20:39:44+08:00 ] 127.0.0.1 127.0.0.1 GET /hello
+[ info ] z.cn/hello [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：943.09kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T20:40:23+08:00 ] 127.0.0.1 127.0.0.1 GET /hello/123?name=aqie
+[ info ] z.cn/hello/123?name=aqie [运行时间：0.096006s][吞吐率：10.42req/s] [内存消耗：946.45kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/hello/123' => '',
+  'name' => 'aqie',
+  'id' => '123',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:age[F:\applet\thinkphp\library\think\App.php:281]
+---------------------------------------------------------------
+[ 2017-05-18T20:41:40+08:00 ] 127.0.0.1 127.0.0.1 POST /rely/123?name=aqie
+[ info ] z.cn/rely/123?name=aqie [运行时间：0.294017s][吞吐率：3.40req/s] [内存消耗：904.00kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'rely',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------975323285688695127688521',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'e80cfa19-7aa3-40ac-b41b-6df0fec2dfd5',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/rely/123' => '',
+  'name' => 'aqie',
+  'age' => '18',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->rely[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T20:42:09+08:00 ] 127.0.0.1 127.0.0.1 POST /hello/123?name=aqie
+[ info ] z.cn/hello/123?name=aqie [运行时间：0.056004s][吞吐率：17.86req/s] [内存消耗：903.98kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------586377347536355527259442',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '3000f78b-e558-44c6-941e-252aa2ff94af',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/hello/123' => '',
+  'name' => 'aqie',
+  'age' => '18',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\sample\Controller\Test->hello[ F:\applet\application\sample\Controller\Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T20:42:19+08:00 ] 127.0.0.1 127.0.0.1 GET /hello/123?name=aqie
+[ info ] z.cn/hello/123?name=aqie [运行时间：0.059003s][吞吐率：16.95req/s] [内存消耗：946.58kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sample',
+    1 => 'Test',
+    2 => 'hello',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/hello/123' => '',
+  'name' => 'aqie',
+  'id' => '123',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:age[F:\applet\thinkphp\library\think\App.php:281]
+---------------------------------------------------------------
+[ 2017-05-18T21:40:53+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/22
+[ info ] z.cn/banner/22 [运行时间：1.062060s][吞吐率：0.94req/s] [内存消耗：946.80kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'v1',
+    1 => 'Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'a5fde0e6-1293-4ded-8a7f-0e6f54d90ec0',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/22' => '',
+  'id' => '22',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T21:41:17+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/22
+[ info ] z.cn/banner/22 [运行时间：0.057003s][吞吐率：17.54req/s] [内存消耗：946.77kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'v1',
+    1 => 'Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'b7441fff-c7ef-4653-b386-ce988466281d',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/22' => '',
+  'id' => '22',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T21:41:54+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/22
+[ info ] z.cn/banner/22 [运行时间：0.058004s][吞吐率：17.24req/s] [内存消耗：947.21kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '38a93bd2-7f6d-4d84-9e91-22b271a31563',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/22' => '',
+  'id' => '22',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T21:42:26+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/22
+[ info ] z.cn/banner/22 [运行时间：0.055004s][吞吐率：18.18req/s] [内存消耗：902.13kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '211aa4f9-b10e-422f-af66-98b2b5c4d89b',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/22' => '',
+  'id' => '22',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T21:42:27+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/22
+[ info ] z.cn/banner/22 [运行时间：0.043003s][吞吐率：23.25req/s] [内存消耗：902.13kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '78bf55a8-de2c-48f3-a256-4b575da6c3ce',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/22' => '',
+  'id' => '22',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T21:53:44+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/233/?XDEBUG_SESSION_START=10027
+[ info ] z.cn/banner/233/?XDEBUG_SESSION_START=10027 [运行时间：0.105006s][吞吐率：9.52req/s] [内存消耗：951.69kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'e9a76682-770d-4a7a-8978-5202a92359ec',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/233/' => '',
+  'XDEBUG_SESSION_START' => '10027',
+  'id' => '233',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class 'think\validate' not found[F:\applet\application\api\controller\v1\Banner.php:25]
+---------------------------------------------------------------
+[ 2017-05-18T22:03:55+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/233/?XDEBUG_SESSION_START=11065
+[ info ] z.cn/banner/233/?XDEBUG_SESSION_START=11065 [运行时间：185.669620s][吞吐率：0.01req/s] [内存消耗：1,069.06kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '67377e4c-170d-4567-b22a-c13d3c8c1829',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/233/' => '',
+  'XDEBUG_SESSION_START' => '11065',
+  'id' => '233',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:04:46+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/233/?XDEBUG_SESSION_START=11065
+[ info ] z.cn/banner/233/?XDEBUG_SESSION_START=11065 [运行时间：50.392883s][吞吐率：0.02req/s] [内存消耗：1,050.08kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'c15d4b3b-1049-49b9-bbef-b881f71477b8',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/233/' => '',
+  'XDEBUG_SESSION_START' => '11065',
+  'id' => '233',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:04:47+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/233/?XDEBUG_SESSION_START=11065
+[ info ] z.cn/banner/233/?XDEBUG_SESSION_START=11065 [运行时间：1.214069s][吞吐率：0.82req/s] [内存消耗：1,049.29kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '82398538-afb9-4b6b-b95b-8cb3431d9563',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/233/' => '',
+  'XDEBUG_SESSION_START' => '11065',
+  'id' => '233',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:05:43+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/233/?XDEBUG_SESSION_START=11065
+[ info ] z.cn/banner/233/?XDEBUG_SESSION_START=11065 [运行时间：0.189011s][吞吐率：5.29req/s] [内存消耗：1,164.91kb] [文件加载：33]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'a1b05627-5004-4d26-b941-a81b774d576d',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/233/' => '',
+  'XDEBUG_SESSION_START' => '11065',
+  'id' => '233',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Array to string conversion[F:\applet\application\api\controller\v1\Banner.php:31]
+---------------------------------------------------------------
+[ 2017-05-18T22:07:26+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/233/?XDEBUG_SESSION_START=11065
+[ info ] z.cn/banner/233/?XDEBUG_SESSION_START=11065 [运行时间：34.965000s][吞吐率：0.03req/s] [内存消耗：1,050.48kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'de8ba9b9-e0d9-4342-b8a7-8a8a0e5e7714',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/233/' => '',
+  'XDEBUG_SESSION_START' => '11065',
+  'id' => '233',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:07:35+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/233/?XDEBUG_SESSION_START=11065
+[ info ] z.cn/banner/233/?XDEBUG_SESSION_START=11065 [运行时间：8.551489s][吞吐率：0.12req/s] [内存消耗：1,051.55kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'b8175164-7670-4e53-b0e8-8589c838a382',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/233/' => '',
+  'XDEBUG_SESSION_START' => '11065',
+  'id' => '233',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:08:37+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/233/?XDEBUG_SESSION_START=11065
+[ info ] z.cn/banner/233/?XDEBUG_SESSION_START=11065 [运行时间：5.612321s][吞吐率：0.18req/s] [内存消耗：1,049.71kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'cc8e957e-43f4-4f22-b801-20e341a3e203',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/233/' => '',
+  'XDEBUG_SESSION_START' => '11065',
+  'id' => '233',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:09:06+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/233/?XDEBUG_SESSION_START=11065
+[ info ] z.cn/banner/233/?XDEBUG_SESSION_START=11065 [运行时间：10.075576s][吞吐率：0.10req/s] [内存消耗：1,050.43kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '4a06827f-90b4-49bf-a8f8-fe360044b8b2',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/233/' => '',
+  'XDEBUG_SESSION_START' => '11065',
+  'id' => '233',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:11:50+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/233/?XDEBUG_SESSION_START=11065
+[ info ] z.cn/banner/233/?XDEBUG_SESSION_START=11065 [运行时间：150.630615s][吞吐率：0.01req/s] [内存消耗：1,049.71kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '12069ab2-d785-4cc2-9b61-45c67f485634',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/233/' => '',
+  'XDEBUG_SESSION_START' => '11065',
+  'id' => '233',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:11:50+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/233/?XDEBUG_SESSION_START=11065
+[ info ] z.cn/banner/233/?XDEBUG_SESSION_START=11065 [运行时间：0.080004s][吞吐率：12.50req/s] [内存消耗：1,098.48kb] [文件加载：32]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '560eeb6a-6774-4ef3-a948-98c18d27f77e',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/233/' => '',
+  'XDEBUG_SESSION_START' => '11065',
+  'id' => '233',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method think\Validate::banch()[F:\applet\application\api\controller\v1\Banner.php:30]
+---------------------------------------------------------------
+[ 2017-05-18T22:12:17+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/233/?XDEBUG_SESSION_START=11065
+[ info ] z.cn/banner/233/?XDEBUG_SESSION_START=11065 [运行时间：4.199240s][吞吐率：0.24req/s] [内存消耗：1,049.87kb] [文件加载：29]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '8ca781bd-dedc-42a1-a03d-96c3b5ea2949',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/233/' => '',
+  'XDEBUG_SESSION_START' => '11065',
+  'id' => '233',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:18:38+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/233/?XDEBUG_SESSION_START=11065
+[ info ] z.cn/banner/233/?XDEBUG_SESSION_START=11065 [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：1,052.72kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '7e945f0c-415a-453f-b51b-a323444f8f86',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/233/' => '',
+  'XDEBUG_SESSION_START' => '11065',
+  'id' => '233',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:18:56+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/233/?XDEBUG_SESSION_START=11065
+[ info ] z.cn/banner/233/?XDEBUG_SESSION_START=11065 [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：1,052.72kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '490e1594-7dd6-40a3-9c5b-74c03adb519c',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/233/' => '',
+  'XDEBUG_SESSION_START' => '11065',
+  'id' => '233',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:18:58+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/233/?XDEBUG_SESSION_START=11065
+[ info ] z.cn/banner/233/?XDEBUG_SESSION_START=11065 [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,052.72kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'b19ad087-fd71-4480-926d-71273164d5ab',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/233/' => '',
+  'XDEBUG_SESSION_START' => '11065',
+  'id' => '233',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:31:31+08:00 ] 127.0.0.1 127.0.0.1 GET /index/list/list
+[ info ] z.cn/index/list/list [运行时间：0.082005s][吞吐率：12.19req/s] [内存消耗：944.30kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:32:52+08:00 ] 127.0.0.1 127.0.0.1 GET /list
+[ info ] z.cn/list [运行时间：0.045002s][吞吐率：22.22req/s] [内存消耗：946.80kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:33:33+08:00 ] 127.0.0.1 127.0.0.1 GET /list
+[ info ] z.cn/list [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：946.80kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:33:33+08:00 ] 127.0.0.1 127.0.0.1 GET /list
+[ info ] z.cn/list [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：946.80kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:33:44+08:00 ] 127.0.0.1 127.0.0.1 GET /list
+[ info ] z.cn/list [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：946.80kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:33:45+08:00 ] 127.0.0.1 127.0.0.1 GET /list
+[ info ] z.cn/list [运行时间：0.312018s][吞吐率：3.20req/s] [内存消耗：1,273.01kb] [文件加载：37]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Lists',
+    2 => 'list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/list' => '',
+)
+[ info ] [ RUN ] app\index\controller\Lists->list[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:F:\applet\public/../application/index\view\lists\list.html[F:\applet\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2017-05-18T22:34:20+08:00 ] 127.0.0.1 127.0.0.1 GET /list
+[ info ] z.cn/list [运行时间：0.098005s][吞吐率：10.20req/s] [内存消耗：1,360.58kb] [文件加载：37]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Lists',
+    2 => 'list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/list' => '',
+)
+[ info ] [ RUN ] app\index\controller\Lists->list[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ VIEW ] F:\applet\public/../application/index\view\lists\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:34:23+08:00 ] 127.0.0.1 127.0.0.1 GET /list
+[ info ] z.cn/list [运行时间：0.063004s][吞吐率：15.87req/s] [内存消耗：1,165.20kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Lists',
+    2 => 'list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/list' => '',
+)
+[ info ] [ RUN ] app\index\controller\Lists->list[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ VIEW ] F:\applet\public/../application/index\view\lists\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:35:44+08:00 ] 127.0.0.1 127.0.0.1 GET /index/lists/list
+[ info ] z.cn/index/lists/list [运行时间：0.064003s][吞吐率：15.62req/s] [内存消耗：944.67kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:35:54+08:00 ] 127.0.0.1 127.0.0.1 GET /index/lists/list
+[ info ] z.cn/index/lists/list [运行时间：0.059003s][吞吐率：16.95req/s] [内存消耗：944.67kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:36:32+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index
+[ info ] z.cn/index/index/index [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：1,160.94kb] [文件加载：34]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/index' => '',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\applet\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:36:51+08:00 ] 127.0.0.1 127.0.0.1 GET /index/lists/list
+[ info ] z.cn/index/lists/list [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：944.67kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:36:53+08:00 ] 127.0.0.1 127.0.0.1 GET /index/lists/list
+[ info ] z.cn/index/lists/list [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：1,162.50kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/index/lists/list' => '',
+)
+[ info ] [ RUN ] app\index\controller\Lists->list[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ VIEW ] F:\applet\public/../application/index\view\lists\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:36:57+08:00 ] 127.0.0.1 127.0.0.1 GET /index/lists/list
+[ info ] z.cn/index/lists/list [运行时间：0.061004s][吞吐率：16.39req/s] [内存消耗：1,162.50kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/index/lists/list' => '',
+)
+[ info ] [ RUN ] app\index\controller\Lists->list[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ VIEW ] F:\applet\public/../application/index\view\lists\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:37:31+08:00 ] 127.0.0.1 127.0.0.1 VIEW /index/lists/list
+[ info ] z.cn/index/lists/list [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,162.74kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------690164771878759666208662',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'd0c051c6-5f24-40c0-b7be-505424b8bfec',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/index/lists/list' => '',
+)
+[ info ] [ RUN ] app\index\controller\Lists->list[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ VIEW ] F:\applet\public/../application/index\view\lists\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:37:33+08:00 ] 127.0.0.1 127.0.0.1 VIEW /index/lists/list
+[ info ] z.cn/index/lists/list [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：1,162.74kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------316214136467042007456734',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'acf8d0de-3330-483e-9dc7-734c500c614b',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/index/lists/list' => '',
+)
+[ info ] [ RUN ] app\index\controller\Lists->list[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ VIEW ] F:\applet\public/../application/index\view\lists\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:37:34+08:00 ] 127.0.0.1 127.0.0.1 VIEW /index/lists/list
+[ info ] z.cn/index/lists/list [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,162.74kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------721199960101125422109265',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '65bb8ac4-988f-49f4-bf1c-7e9a2862f6a1',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/index/lists/list' => '',
+)
+[ info ] [ RUN ] app\index\controller\Lists->list[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ VIEW ] F:\applet\public/../application/index\view\lists\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:37:39+08:00 ] 127.0.0.1 127.0.0.1 POST /index/lists/list
+[ info ] z.cn/index/lists/list [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：1,162.63kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------812958474394788293042481',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '3e56ff78-07ad-431d-82d5-b28878f6f79d',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/index/lists/list' => '',
+  'age' => '18',
+)
+[ info ] [ RUN ] app\index\controller\Lists->list[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ VIEW ] F:\applet\public/../application/index\view\lists\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:37:40+08:00 ] 127.0.0.1 127.0.0.1 POST /index/lists/list
+[ info ] z.cn/index/lists/list [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：1,162.63kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------608832231217369313218521',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '75693c39-4006-4cc3-82d3-cf4701777551',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/index/lists/list' => '',
+  'age' => '18',
+)
+[ info ] [ RUN ] app\index\controller\Lists->list[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ VIEW ] F:\applet\public/../application/index\view\lists\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:37:46+08:00 ] 127.0.0.1 127.0.0.1 POST /index/lists/list
+[ info ] z.cn/index/lists/list [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：1,162.63kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------429391005315903464260410',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '958d1dd2-519f-462e-a096-bbc9a534e72a',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/index/lists/list' => '',
+  'age' => '18',
+)
+[ info ] [ RUN ] app\index\controller\Lists->list[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ VIEW ] F:\applet\public/../application/index\view\lists\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:37:56+08:00 ] 127.0.0.1 127.0.0.1 GET /index/lists/list
+[ info ] z.cn/index/lists/list [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：1,162.50kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/index/lists/list' => '',
+)
+[ info ] [ RUN ] app\index\controller\Lists->list[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ VIEW ] F:\applet\public/../application/index\view\lists\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:38:46+08:00 ] 127.0.0.1 127.0.0.1 POST /index/lists/list
+[ info ] z.cn/index/lists/list [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,162.66kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------728492348642259502818710',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '1ed35eb3-d070-49a9-aff6-2b93932af86c',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/index/lists/list' => '',
+  'age' => '18',
+)
+[ info ] [ RUN ] app\index\controller\Lists->list[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ VIEW ] F:\applet\public/../application/index\view\lists\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:38:47+08:00 ] 127.0.0.1 127.0.0.1 POST /index/lists/list
+[ info ] z.cn/index/lists/list [运行时间：0.059003s][吞吐率：16.95req/s] [内存消耗：1,162.66kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------495010000454580866184750',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'f9c6ead8-e183-4700-b2ab-119de546890d',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/index/lists/list' => '',
+  'age' => '18',
+)
+[ info ] [ RUN ] app\index\controller\Lists->list[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ VIEW ] F:\applet\public/../application/index\view\lists\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:38:57+08:00 ] 127.0.0.1 127.0.0.1 GET /index/lists/list
+[ info ] z.cn/index/lists/list [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：1,162.53kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'lists',
+    2 => 'list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/index/lists/list' => '',
+)
+[ info ] [ RUN ] app\index\controller\Lists->list[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ VIEW ] F:\applet\public/../application/index\view\lists\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:39:06+08:00 ] 127.0.0.1 127.0.0.1 GET /list
+[ info ] z.cn/list [运行时间：0.082004s][吞吐率：12.19req/s] [内存消耗：1,165.11kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Lists',
+    2 => 'list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/list' => '',
+)
+[ info ] [ RUN ] app\index\controller\Lists->list[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ VIEW ] F:\applet\public/../application/index\view\lists\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:39:08+08:00 ] 127.0.0.1 127.0.0.1 GET /list
+[ info ] z.cn/list [运行时间：0.068004s][吞吐率：14.71req/s] [内存消耗：1,165.23kb] [文件加载：35]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Lists',
+    2 => 'list',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/list' => '',
+)
+[ info ] [ RUN ] app\index\controller\Lists->list[ F:\applet\application\index\controller\Lists.php ]
+[ info ] [ VIEW ] F:\applet\public/../application/index\view\lists\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:42:50+08:00 ] 127.0.0.1 127.0.0.1 GET /list?id=s
+[ info ] z.cn/list?id=s [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：948.72kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'list',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://z.cn/list',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/list' => '',
+  'id' => 's',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:43:04+08:00 ] 127.0.0.1 127.0.0.1 GET /list?id=1
+[ info ] z.cn/list?id=1 [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：948.72kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'list',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://z.cn/list',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/list' => '',
+  'id' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T22:44:06+08:00 ] 127.0.0.1 127.0.0.1 GET /list?id=1
+[ info ] z.cn/list?id=1 [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：948.72kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'list',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://z.cn/list',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/list' => '',
+  'id' => '1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:03:15+08:00 ] 127.0.0.1 127.0.0.1 POST /banner/?XDEBUG_SESSION_START=13339
+[ info ] z.cn/banner/?XDEBUG_SESSION_START=13339 [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：948.77kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'banner',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------455330402519499395871252',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'a4a6e4cc-7e2c-4654-b210-22c8502cae98',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/' => '',
+  'XDEBUG_SESSION_START' => '13339',
+  'age' => '18',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:03:58+08:00 ] 127.0.0.1 127.0.0.1 POST /banner/?XDEBUG_SESSION_START=13339
+[ info ] z.cn/banner/?XDEBUG_SESSION_START=13339 [运行时间：0.230013s][吞吐率：4.35req/s] [内存消耗：946.67kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:04:34+08:00 ] 127.0.0.1 127.0.0.1 POST /banner/123/?XDEBUG_SESSION_START=13339
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=13339 [运行时间：0.051002s][吞吐率：19.61req/s] [内存消耗：946.69kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:06:05+08:00 ] 127.0.0.1 127.0.0.1 POST /banner/123/?XDEBUG_SESSION_START=13339
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=13339 [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：946.69kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:06:16+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123
+[ info ] z.cn/banner/123 [运行时间：0.112006s][吞吐率：8.93req/s] [内存消耗：1,057.44kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'z.cn',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123' => '',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:07:11+08:00 ] 127.0.0.1 127.0.0.1 POST /banner/123/?XDEBUG_SESSION_START=13339
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=13339 [运行时间：0.067003s][吞吐率：14.92req/s] [内存消耗：946.69kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:08:05+08:00 ] 127.0.0.1 127.0.0.1 POST /banner/123/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=14720 [运行时间：0.049002s][吞吐率：20.41req/s] [内存消耗：946.69kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:08:43+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] z.cn/ [运行时间：0.060004s][吞吐率：16.67req/s] [内存消耗：944.97kb] [文件加载：31]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:11:09+08:00 ] 127.0.0.1 127.0.0.1 POST /banner/123/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=14720 [运行时间：68.154898s][吞吐率：0.01req/s] [内存消耗：1,061.05kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '160',
+  'content-type' => 'multipart/form-data; boundary=--------------------------292102110677972927947403',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'aeb691af-f8c1-415d-a193-2c65cf9102df',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'age' => '18',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:12:57+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=14720 [运行时间：103.047894s][吞吐率：0.01req/s] [内存消耗：1,057.74kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '9d616266-24eb-459b-a32e-3d80de5a866f',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:14:13+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=14720 [运行时间：59.130382s][吞吐率：0.02req/s] [内存消耗：1,056.82kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '2448111c-a8ab-4f6d-9ccd-5803c178c9eb',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:14:24+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=14720 [运行时间：5.008287s][吞吐率：0.20req/s] [内存消耗：1,056.82kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '27d088f0-4209-44d8-a52d-ea32eea2ca73',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:16:01+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=14720 [运行时间：49.096809s][吞吐率：0.02req/s] [内存消耗：1,057.74kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '373eea27-e37e-45da-93b6-7c875e405d75',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:21:14+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=14720 [运行时间：207.704880s][吞吐率：0.00req/s] [内存消耗：1,056.82kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '693abbf0-a948-442f-8f53-75d1ee7857e5',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:21:17+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=14720 [运行时间：2.076119s][吞吐率：0.48req/s] [内存消耗：1,056.82kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '39c57cd8-ce50-415d-81db-db2c5e262984',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:23:58+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=14720 [运行时间：135.363742s][吞吐率：0.01req/s] [内存消耗：1,059.25kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '525c1196-f295-4579-bdb3-0516ce9ebcb6',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:24:43+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=14720 [运行时间：41.094351s][吞吐率：0.02req/s] [内存消耗：1,056.82kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '754cf94c-78f6-4031-9557-2a1aaba5ec43',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:28:09+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=14720 [运行时间：73.877225s][吞吐率：0.01req/s] [内存消耗：1,066.39kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '6c98e3bb-d187-400f-95a3-38b9305f9dd9',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:28:11+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=14720 [运行时间：1.692097s][吞吐率：0.59req/s] [内存消耗：1,056.82kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '5b4fb996-3e7f-47ec-94f1-6177d7a55b93',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:28:29+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=14720 [运行时间：7.567433s][吞吐率：0.13req/s] [内存消耗：1,056.82kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'c5670e0b-4c65-4dc2-aee6-67c692606c39',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:29:35+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=14720 [运行时间：23.562347s][吞吐率：0.04req/s] [内存消耗：1,056.82kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'bbdc9ba6-95e8-4bd5-91a3-5994a0c4e3fd',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:35:06+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=14720 [运行时间：311.318806s][吞吐率：0.00req/s] [内存消耗：1,056.82kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '19418bae-8233-48bc-9aaf-df0bbf4ebf3d',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:35:30+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=14720 [运行时间：23.974372s][吞吐率：0.04req/s] [内存消耗：1,057.73kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '41aa481c-2a53-4bc3-9451-117ac10aeae2',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:35:31+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/123/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/123/?XDEBUG_SESSION_START=14720 [运行时间：0.873050s][吞吐率：1.15req/s] [内存消耗：1,057.73kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '2d4fa27a-f724-44b2-ab3c-a8f6b5a8c88f',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/123/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '123',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:35:34+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/12s3/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/12s3/?XDEBUG_SESSION_START=14720 [运行时间：2.892165s][吞吐率：0.35req/s] [内存消耗：1,057.98kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'ab3c7269-3cd0-432d-aca4-830b8bae4249',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/12s3/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '12s3',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:35:46+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/12s3/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/12s3/?XDEBUG_SESSION_START=14720 [运行时间：7.307418s][吞吐率：0.14req/s] [内存消耗：1,057.98kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '5db476e1-0bcd-4b9d-b4ae-73d4fe649f5b',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/12s3/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '12s3',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:36:56+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/12s3/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/12s3/?XDEBUG_SESSION_START=14720 [运行时间：39.145239s][吞吐率：0.03req/s] [内存消耗：1,058.88kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '11831887-ec02-4f74-8f6d-85cff19b9314',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/12s3/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '12s3',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:37:05+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/12s3/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/12s3/?XDEBUG_SESSION_START=14720 [运行时间：3.023173s][吞吐率：0.33req/s] [内存消耗：1,057.98kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '2a0379aa-3a28-4dc1-b646-7b7a2d8e06a4',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/12s3/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '12s3',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:37:38+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/12s3/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/12s3/?XDEBUG_SESSION_START=14720 [运行时间：21.378223s][吞吐率：0.05req/s] [内存消耗：1,057.98kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '60133de7-e22a-414b-92f4-334e633d3d64',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/12s3/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '12s3',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:38:27+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/12s3/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/12s3/?XDEBUG_SESSION_START=14720 [运行时间：4.575262s][吞吐率：0.22req/s] [内存消耗：1,057.98kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '7884c4ac-3ce0-4355-9b93-c839faf3d947',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/12s3/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '12s3',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:39:11+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/12s3/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/12s3/?XDEBUG_SESSION_START=14720 [运行时间：36.434084s][吞吐率：0.03req/s] [内存消耗：1,057.98kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => '6c8e7b2b-8abc-4407-919e-06c59518736a',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/12s3/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '12s3',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-05-18T23:40:01+08:00 ] 127.0.0.1 127.0.0.1 GET /banner/12s3/?XDEBUG_SESSION_START=14720
+[ info ] z.cn/banner/12s3/?XDEBUG_SESSION_START=14720 [运行时间：42.949457s][吞吐率：0.02req/s] [内存消耗：1,058.90kb] [文件加载：30]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Banner',
+    2 => 'getBanner',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'z.cn',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/3.0.11-hotfix.2',
+  'postman-token' => 'ee7ad3d9-4886-4dd3-b2ad-fc6dcdd3cc5d',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  '/banner/12s3/' => '',
+  'XDEBUG_SESSION_START' => '14720',
+  'id' => '12s3',
+)
+[ info ] [ RUN ] app\api\controller\v1\Banner->getBanner[ F:\applet\application\api\controller\v1\Banner.php ]
+[ info ] [ LOG ] INIT File

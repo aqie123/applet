@@ -1,0 +1,28 @@
+---------------------------------------------------------------
+[ 2017-05-14T17:53:08+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.applet.com/ [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：900.13kb] [文件加载：28]
+[ info ] [ LANG ] F:\applet\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.aqie.com/index.php',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.applet.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\applet\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
