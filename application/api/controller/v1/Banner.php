@@ -48,15 +48,16 @@ class Banner
         // get find  all select
         // $banner = new BannerModel();  $banner = $banner->get($id); // 实例化
 
-         $banner = BannerModel::getBannerById($id); // 测试抛出异常经过ExceptionHandler/render方法
-        $data = $banner->toArray();
+          $banner = BannerModel::getBannerById($id); // 测试抛出异常经过ExceptionHandler/render方法
+        //$banner = BannerModel::get($id);
         // $banner->hidden(['delete_time','update_time']);   隐藏字段 (更好在模型中隐藏)
         // $banner->visible(['id','name']);                  显示字段
         if(!$banner){
-            //自定义错误
+            // 自定义异常处理
              throw new BannerMissException();
             // throw new Exception("服务器内部错误aqie");
         }
+        $data = $banner->toArray();
         return $banner; // 变成模型后会自动序列化成json
     }
 }

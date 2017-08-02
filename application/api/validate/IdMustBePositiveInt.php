@@ -7,7 +7,7 @@
 
 namespace app\api\validate;
 
-
+// id必须为整数
 class IdMustBePositiveInt extends BaseValidate
 {
     // http://z.cn/api/v1/banner/0.8?num=4

@@ -15,15 +15,19 @@ use think\Validate;
 
 class BaseValidate extends Validate
 {
+    /**
+     * 获取http传入参数
+     * 整个验证层 对参数校验
+     * (http://z.cn/banner/123     Route::get('banner/:id',"api/v1.Banner/getBanner");)
+     * @return bool
+     * @throws ParameterException
+     */
     public function goCheck(){
-        // 获取http传入参数
-        // 对参数校验
-        // http://z.cn/banner/123     Route::get('banner/:id',"api/v1.Banner/getBanner");
         $request = Request::instance();
         $params = $request->param();
         // 批量验证错误
         $result = $this->batch()->check($params);
-        // var_dump($result);   // true
+
         if(!$result){
             // 保证验证规则正确  应该抛出自定义异常
             $e = new ParameterException([  // 使用构造函数代替
@@ -32,6 +36,7 @@ class BaseValidate extends Validate
             // 获取当前错误
             // $e->msg = $this->error;
             throw $e;  // throw 必须是异常
+
         }else{
             return true;
         }
@@ -42,7 +47,7 @@ class BaseValidate extends Validate
      * @param $value
      * @param $rule
      * @param $data
-     * @param $field
+     * @param $field  (验证字段)
      * @return mixed
      */
     protected function isPositiveInteger($value,$rule='',$data='',$field=''){

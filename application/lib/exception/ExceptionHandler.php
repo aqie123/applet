@@ -31,13 +31,13 @@ class ExceptionHandler extends Handle
 
     public function render(\Exception $e)
     {
-        // return json("-----错误------"); // 测试自定义异常
+        // return json("-----错误------"); // 测试自定义异常,所有异常都会经过render
         if($e instanceof BaseException){
             // 如果是自定义异常
             $this->code = $e->code;
             $this->msg = $e->msg;
             $this->errorCode = $e->errorCode;
-        }else{
+        }else{  // 服务器异常
             if(config('app_debug')){  // 调试模式显示自带错误页面
                 // return default error page 调用父类方法
                 return parent::render($e);
@@ -52,7 +52,7 @@ class ExceptionHandler extends Handle
 
         }
         // 获取当前请求url
-        $request = Request::instance();
+        $request = Request::instance();  // 拿到当前请求实例对象
         $result = [
             'msg' => $this->msg,
             'error_code' => $this->errorCode,

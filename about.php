@@ -41,8 +41,10 @@
     命令行运行 ： 进入public 目录 php -S localhost:8080 route.php
     ctrl +alt +o :删除无用命名空间
     Directory : app作为根目录自动补全namespace
+    调试：在页面点击debug，然后复制地址到postman
 23. 业务写在model层
     业务层进一步分层(model->server)
+    interface 松耦合
 24.安装接口测试工具 PostMan
 25.tp5 路由：(默认url_route_on 是混合模式)(url_route_must 强制开启路由)
     PATH_INFO
@@ -52,7 +54,14 @@
         1.hello($name) 变量自动对应
         2.request对象
         3.input助手函数获取
-26.构建REST API
+25.5  参数校验层
+    validate :1.独立验证，2.验证器
+        1.$data = ['name'=>'aqie']; $validate =new Validate([]); $result = $validate->banch()->check($data);
+        2.验证器：
+            1.api/validate/TestValidate 测试验证器   $validate =new TestValidate;
+            2.IdMustBePositiveInt
+
+26.构建REST API (表述性状态转移)
     1.轻
     2.Json描述数据
     3.无状态
@@ -74,14 +83,22 @@
     11.RESTFul API : 1.豆瓣开放API  (https://developers.douban.com/wiki/?title=api_v2)
                      2.github API  (https://developer.github.com/v3/)
     REST (Representational State Transfer 表述性状态转移)
-    SOAP (Simple Object Access Protocol)
-27.异常的分类
-    1.用户行为导致异常（没通过验证器,没查询到结果）
-        不需要记录日志，向用户返回具体信息
-    2.服务器自身异常（代码错误,调用接口异常）
-        记录日志，不向客户端返回具体原因
+    SOAP (Simple Object Access Protocol) xml表述数据
+27.异常处理层
+    a.异常的分类
+        1.用户行为导致异常（没通过验证器,没查询到结果）继承BaseException类
+            不需要记录日志，向用户返回具体信息
+        2.服务器自身异常（代码错误,调用接口异常）
+            记录日志，不向客户端返回具体原因
+    b.'app_debug'              => false,  关闭调试模式
+    c.lib/exception 有异常处理类
+        'exception_handle'       => 'app\lib\exception\ExceptionHandler', 重新配置全局异常处理类
+        ExceptionHandler :重写render方法
+        BaseValidate     : gocheck(进行参数校验)
+        客户端传递不符合要求id号：debug:错误页面,生产环境：500   都不符合要求
+        应该使用自定义异常 ParameterException,并在BaseException编写构造函数
 28.tp5日志
-    1.config 配置
+    1.config 配置 log,同时在index.php配置新路径
     2.关闭tp5日志 file->test，然后再要生成日志地方初始化日志
 29.tp5查询数据库
     1.原生sql语句
@@ -89,6 +106,7 @@
     3.模型 关联模型操作数据
 30.tp5连接数据库
     1.Db->Collection(实例化对象连接数据库)
+        Db::辅助方法->
         query查询器(curd简单封装)
         原生sql
         ORM模型
@@ -114,3 +132,5 @@
         嵌套关联
     4. http://z.cn/api/v1/banner/1   获取banner id为1的数据
         模型里隐藏 $protected
+32.查找错误
+    1.
