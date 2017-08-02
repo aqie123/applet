@@ -46,10 +46,10 @@ class Banner
         $validate->goCheck();
 
         // get find  all select
-        // $banner = new BannerModel();  $banner = $banner->get($id); // 实例化
+        // $banner = new BannerModel();  $banner = $banner->get($id); // 实例化(推荐静态查询)
 
-          $banner = BannerModel::getBannerById($id); // 测试抛出异常经过ExceptionHandler/render方法
-        //$banner = BannerModel::get($id);
+        $banner = BannerModel::getBannerById($id); // 测试抛出异常经过ExceptionHandler/render方法
+        // $banner = BannerModel::get($id);           // 上面是使用自定义方法查询，返回的是对象
         // $banner->hidden(['delete_time','update_time']);   隐藏字段 (更好在模型中隐藏)
         // $banner->visible(['id','name']);                  显示字段
         if(!$banner){
@@ -57,7 +57,7 @@ class Banner
              throw new BannerMissException();
             // throw new Exception("服务器内部错误aqie");
         }
-        $data = $banner->toArray();
+        // $data = $banner->toArray();   unset($data['delete_time']);
         return $banner; // 变成模型后会自动序列化成json
     }
 }

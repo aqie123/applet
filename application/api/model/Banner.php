@@ -13,8 +13,21 @@ use think\Model;
 
 class Banner extends Model
 {
+    // protected $table = "Banner_item";  // 对应表名
     protected $hidden = ['update_time','delete_time'];
-    // protected $table = "Banner_item";  对应表名
+    /**
+     * Banner关联表Banner_item (关联模型，外键，主键id)
+     * @return \think\model\relation\HasMany
+     */
+    public function items(){
+        return $this->hasMany('BannerItem','banner_id','id');
+    }
+
+    /**
+     * 通过id获取banner信息
+     * @param $id
+     * @return array|false|null|\PDOStatement|string|Model
+     */
     public static function getBannerById($id){
         /*
         try{
@@ -24,7 +37,7 @@ class Banner extends Model
             throw $e;  // 抛到控制器
         }
         */
-        // banner表关联item   item关联img
+        // banner表关联item   item关联img   items就是关联的方法名
         $banner = self::with(["items",'items.img'])->find($id);  // 变成模型 直接调用基类方法 (推荐静态)
         return $banner;
         // $result = Db::query('select * from banner_item where banner_id = ?',[$id]);  // query 查询
@@ -41,11 +54,5 @@ class Banner extends Model
           return null;  // 抛出异常
     }
 
-    /**
-     * 关联表 (关联模型，外键，主键id)
-     * @return \think\model\relation\HasMany
-     */
-    public function items(){
-        return $this->hasMany('BannerItem','banner_id','id');
-    }
+
 }

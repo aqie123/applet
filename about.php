@@ -124,13 +124,15 @@
         业务简单，一个模型对应一张表（默认数据表名和模型名一一对应）
         自动生成模型：
             根目录(applet) php think make:model api/BannerItem   创建bannerItem模型
-        a.get find 只能查询一条记录  1,3 模型特有 2,4 db特有  模型都可以使用
+        a. 查询总结
+            get find 只能查询一条记录,  get all 模型特有， find select db特有 ，但是模型也可以使用
             all select 返回一组
-    3.关联模型
+    3.关联模型  ($banner = self::with(["items",'items.img'])->find($id);)
         banner->banner_item 一对多
         banner_item->image 一对一
         嵌套关联
     4. http://z.cn/api/v1/banner/1   获取banner id为1的数据
         模型里隐藏 $protected
+    5.note: 默认情况，数据表名和类名一一对应
 32.查找错误
     1.
