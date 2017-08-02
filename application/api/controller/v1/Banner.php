@@ -35,7 +35,7 @@ class Banner
     /**
      * 获取指定id banner 信息
      * @url /banner/:id
-     * @http GET
+     * @http GET 请求方式
      * @param $id (传入不同ID获取banner)
      * @return mixed (返回轮播图信息)
      * @throws BannerMissException

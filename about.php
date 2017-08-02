@@ -40,13 +40,18 @@
     项目中查找 ; ctrl+shift+F   ctrl+f
     命令行运行 ： 进入public 目录 php -S localhost:8080 route.php
     ctrl +alt +o :删除无用命名空间
+    Directory : app作为根目录自动补全namespace
 23. 业务写在model层
     业务层进一步分层(model->server)
 24.安装接口测试工具 PostMan
 25.tp5 路由：(默认url_route_on 是混合模式)(url_route_must 强制开启路由)
     PATH_INFO
-    混合模式
+    混合模式(同一个方法，对其进行路由，pathinfo就会失效)
     强制使用路与模式
+    路由(获取参数变量)三种方法：
+        1.hello($name) 变量自动对应
+        2.request对象
+        3.input助手函数获取
 26.构建REST API
     1.轻
     2.Json描述数据
