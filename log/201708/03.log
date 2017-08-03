@@ -1,0 +1,487 @@
+---------------------------------------------------------------
+[ 2017-08-03T07:58:37+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.688040s][吞吐率：1.45req/s] [内存消耗：2,266.85kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028002s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.169010s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.051002s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2017-08-03T08:20:18+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.097006s][吞吐率：10.31req/s] [内存消耗：2,265.85kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T08:44:19+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.156009s][吞吐率：6.41req/s] [内存消耗：2,315.80kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T08:52:19+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1?XDEBUG_SESSION_START=14311
+[ info ] applet.com/api/v1/banner/1?XDEBUG_SESSION_START=14311 [运行时间：98.436630s][吞吐率：0.01req/s] [内存消耗：2,363.99kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T09:11:43+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.105006s][吞吐率：9.52req/s] [内存消耗：2,320.85kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE (  `id` = 1 ) AND `banner`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T09:16:54+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.094005s][吞吐率：10.64req/s] [内存消耗：2,320.81kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE (  `id` = 1 ) AND `banner`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T10:49:12+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.158009s][吞吐率：6.33req/s] [内存消耗：2,322.52kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE (  `id` = 1 ) AND `banner`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-08-03T11:08:54+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3,4
+[ info ] applet.com/api/v1/theme?ids=1,2,3,4 [运行时间：0.123007s][吞吐率：8.13req/s] [内存消耗：2,253.16kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE `theme`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 16 ) AND `image`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 49 ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T11:09:04+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2
+[ info ] applet.com/api/v1/theme?ids=1,2 [运行时间：0.123007s][吞吐率：8.13req/s] [内存消耗：2,252.92kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE `theme`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.029001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 16 ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 49 ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T11:12:05+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2
+[ info ] applet.com/api/v1/theme?ids=1,2 [运行时间：0.129007s][吞吐率：7.75req/s] [内存消耗：2,254.59kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.030001s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE `theme`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (16,17,18) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (49,50,18) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T11:15:16+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2
+[ info ] applet.com/api/v1/theme?ids=1,2 [运行时间：0.127007s][吞吐率：7.87req/s] [内存消耗：2,254.18kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` IN (1,2) ) AND `theme`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (16,17) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (49,50) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T11:15:17+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2
+[ info ] applet.com/api/v1/theme?ids=1,2 [运行时间：0.121007s][吞吐率：8.26req/s] [内存消耗：2,254.18kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.029001s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` IN (1,2) ) AND `theme`.`delete_time` IS NULL [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.031001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (16,17) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (49,50) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T11:15:22+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3
+[ info ] applet.com/api/v1/theme?ids=1,2,3 [运行时间：0.106006s][吞吐率：9.43req/s] [内存消耗：2,254.60kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` IN (1,2,3) ) AND `theme`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (16,17,18) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (49,50,18) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T11:23:01+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3
+[ info ] applet.com/api/v1/theme?ids=1,2,3 [运行时间：0.116007s][吞吐率：8.62req/s] [内存消耗：2,255.57kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` IN (1,2,3) ) AND `theme`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (16,17,18) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (49,50,18) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T14:14:49+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ info ] applet.com/api/v1/theme/1 [运行时间：0.134008s][吞吐率：7.46req/s] [内存消耗：2,411.05kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` = 1 ) AND `theme`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE (  `pivot`.`theme_id` = 1 ) AND `product`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 16 ) AND `image`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 49 ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T14:15:04+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/2
+[ info ] applet.com/api/v1/theme/2 [运行时间：0.124008s][吞吐率：8.06req/s] [内存消耗：2,417.78kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` = 2 ) AND `theme`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE (  `pivot`.`theme_id` = 2 ) AND `product`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 17 ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 50 ) AND `image`.`delete_time` IS NULL [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-08-03T14:15:08+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/3
+[ info ] applet.com/api/v1/theme/3 [运行时间：0.112006s][吞吐率：8.93req/s] [内存消耗：2,414.23kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` = 3 ) AND `theme`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE (  `pivot`.`theme_id` = 3 ) AND `product`.`delete_time` IS NULL [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 18 ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 18 ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T14:15:41+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ info ] applet.com/api/v1/theme/1 [运行时间：0.104006s][吞吐率：9.61req/s] [内存消耗：2,410.84kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` = 1 ) AND `theme`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE (  `pivot`.`theme_id` = 1 ) AND `product`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 16 ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 49 ) AND `image`.`delete_time` IS NULL [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-08-03T14:17:40+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ info ] applet.com/api/v1/theme/1 [运行时间：0.109006s][吞吐率：9.17req/s] [内存消耗：2,411.30kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` = 1 ) AND `theme`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE (  `pivot`.`theme_id` = 1 ) AND `product`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 16 ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 49 ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T14:18:06+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ info ] applet.com/api/v1/theme/1 [运行时间：0.113006s][吞吐率：8.85req/s] [内存消耗：2,410.98kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` = 1 ) AND `theme`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE (  `pivot`.`theme_id` = 1 ) AND `product`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 16 ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 49 ) AND `image`.`delete_time` IS NULL [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-08-03T14:26:21+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ info ] applet.com/api/v1/theme/1 [运行时间：0.110006s][吞吐率：9.09req/s] [内存消耗：2,411.33kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` = 1 ) AND `theme`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE (  `pivot`.`theme_id` = 1 ) AND `product`.`delete_time` IS NULL [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 16 ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 49 ) AND `image`.`delete_time` IS NULL [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2017-08-03T14:27:48+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ info ] applet.com/api/v1/theme/1 [运行时间：0.116006s][吞吐率：8.62req/s] [内存消耗：2,412.17kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` = 1 ) AND `theme`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE (  `pivot`.`theme_id` = 1 ) AND `product`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 16 ) AND `image`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 49 ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T15:02:53+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=2
+[ info ] applet.com/api/v1/product/recent?count=2 [运行时间：0.078004s][吞吐率：12.82req/s] [内存消耗：2,152.84kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 2 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T15:03:00+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=15
+[ info ] applet.com/api/v1/product/recent?count=15 [运行时间：0.063004s][吞吐率：15.87req/s] [内存消耗：2,159.12kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 15 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T15:03:30+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=15
+[ info ] applet.com/api/v1/product/recent?count=15 [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：2,159.38kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 15 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2017-08-03T15:03:41+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=15
+[ info ] applet.com/api/v1/product/recent?count=15 [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：2,159.38kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 15 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T15:07:48+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=4
+[ info ] applet.com/api/v1/product/recent?count=4 [运行时间：0.058004s][吞吐率：17.24req/s] [内存消耗：2,153.73kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 4 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T15:09:00+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=15
+[ info ] applet.com/api/v1/product/recent?count=15 [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：2,159.47kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 15 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T15:20:04+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=15
+[ info ] applet.com/api/v1/product/recent?count=15 [运行时间：0.076004s][吞吐率：13.16req/s] [内存消耗：2,159.77kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 15 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2017-08-03T15:25:53+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=15&XDEBUG_SESSION_START=15130
+[ info ] applet.com/api/v1/product/recent?count=15&XDEBUG_SESSION_START=15130 [运行时间：52.591008s][吞吐率：0.02req/s] [内存消耗：2,310.03kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 15 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2017-08-03T15:26:52+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=1&XDEBUG_SESSION_START=15130
+[ info ] applet.com/api/v1/product/recent?count=1&XDEBUG_SESSION_START=15130 [运行时间：58.736359s][吞吐率：0.02req/s] [内存消耗：2,161.92kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2017-08-03T15:27:35+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=1&XDEBUG_SESSION_START=15130
+[ info ] applet.com/api/v1/product/recent?count=1&XDEBUG_SESSION_START=15130 [运行时间：39.862280s][吞吐率：0.03req/s] [内存消耗：2,207.07kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2017-08-03T15:27:46+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=1&XDEBUG_SESSION_START=15130
+[ info ] applet.com/api/v1/product/recent?count=1&XDEBUG_SESSION_START=15130 [运行时间：4.900280s][吞吐率：0.20req/s] [内存消耗：2,206.99kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T15:28:11+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=1&XDEBUG_SESSION_START=15130
+[ info ] applet.com/api/v1/product/recent?count=1&XDEBUG_SESSION_START=15130 [运行时间：16.961970s][吞吐率：0.06req/s] [内存消耗：2,210.26kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T15:30:42+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=1&XDEBUG_SESSION_START=15130
+[ info ] applet.com/api/v1/product/recent?count=1&XDEBUG_SESSION_START=15130 [运行时间：93.526349s][吞吐率：0.01req/s] [内存消耗：2,225.77kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2017-08-03T15:31:55+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=15
+[ info ] applet.com/api/v1/product/recent?count=15 [运行时间：0.079005s][吞吐率：12.66req/s] [内存消耗：2,213.41kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 15 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T15:31:57+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=15
+[ info ] applet.com/api/v1/product/recent?count=15 [运行时间：0.077005s][吞吐率：12.99req/s] [内存消耗：2,213.41kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 15 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T15:32:09+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=15
+[ info ] applet.com/api/v1/product/recent?count=15 [运行时间：0.083005s][吞吐率：12.05req/s] [内存消耗：2,213.41kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 15 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T15:32:10+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=15
+[ info ] applet.com/api/v1/product/recent?count=15 [运行时间：0.084005s][吞吐率：11.90req/s] [内存消耗：2,213.41kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 15 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T16:15:33+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ info ] applet.com/api/v1/theme/1 [运行时间：0.124007s][吞吐率：8.06req/s] [内存消耗：2,467.81kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` = 1 ) AND `theme`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE (  `pivot`.`theme_id` = 1 ) AND `product`.`delete_time` IS NULL [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 16 ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 49 ) AND `image`.`delete_time` IS NULL [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-08-03T16:15:59+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3
+[ info ] applet.com/api/v1/theme?ids=1,2,3 [运行时间：0.087005s][吞吐率：11.49req/s] [内存消耗：2,315.02kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` IN (1,2,3) ) AND `theme`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (16,17,18) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (49,50,18) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T16:16:13+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,3,5
+[ info ] applet.com/api/v1/theme?ids=1,3,5 [运行时间：0.083005s][吞吐率：12.05req/s] [内存消耗：2,314.20kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` IN (1,3,5) ) AND `theme`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (16,18) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (49,18) ) AND `image`.`delete_time` IS NULL [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2017-08-03T16:16:21+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=4,6,5
+[ info ] applet.com/api/v1/theme?ids=4,6,5 [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：2,309.09kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` IN (4,6,5) ) AND `theme`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T16:20:08+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=1,2,3
+[ info ] applet.com/api/v1/theme?ids=1,2,3 [运行时间：0.087005s][吞吐率：11.49req/s] [内存消耗：2,315.02kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` IN (1,2,3) ) AND `theme`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (16,17,18) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (49,50,18) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T16:21:32+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme?ids=4,6,5&XDEBUG_SESSION_START=10674
+[ info ] applet.com/api/v1/theme?ids=4,6,5&XDEBUG_SESSION_START=10674 [运行时间：0.111007s][吞吐率：9.01req/s] [内存消耗：2,307.72kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` IN (4,6,5) ) AND `theme`.`delete_time` IS NULL [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2017-08-03T16:26:27+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ info ] applet.com/api/v1/theme/1 [运行时间：0.123008s][吞吐率：8.13req/s] [内存消耗：2,468.34kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` = 1 ) AND `theme`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE (  `pivot`.`theme_id` = 1 ) AND `product`.`delete_time` IS NULL [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 16 ) AND `image`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 49 ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T16:29:50+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=13
+[ info ] applet.com/api/v1/product/recent?count=13 [运行时间：0.078005s][吞吐率：12.82req/s] [内存消耗：2,211.89kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 13 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T16:30:26+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=13
+[ info ] applet.com/api/v1/product/recent?count=13 [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：2,212.21kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 13 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2017-08-03T16:30:27+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=13
+[ info ] applet.com/api/v1/product/recent?count=13 [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：2,212.34kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 13 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T16:32:01+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ info ] applet.com/api/v1/theme/1 [运行时间：0.105006s][吞吐率：9.52req/s] [内存消耗：2,467.91kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` = 1 ) AND `theme`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE (  `pivot`.`theme_id` = 1 ) AND `product`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 16 ) AND `image`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 49 ) AND `image`.`delete_time` IS NULL [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-08-03T16:38:08+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/recent?count=15
+[ info ] applet.com/api/v1/product/recent?count=15 [运行时间：0.073004s][吞吐率：13.70req/s] [内存消耗：2,213.05kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE `product`.`delete_time` IS NULL ORDER BY create_time desc LIMIT 15 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T16:39:16+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/theme/1
+[ info ] applet.com/api/v1/theme/1 [运行时间：0.151009s][吞吐率：6.62req/s] [内存消耗：2,468.34kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE (  `id` = 1 ) AND `theme`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE (  `pivot`.`theme_id` = 1 ) AND `product`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 16 ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` = 49 ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T16:50:50+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ info ] applet.com/api/v1/category/all [运行时间：0.084005s][吞吐率：11.90req/s] [内存消耗：2,125.73kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE `category`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (6,5,7,4,8,9) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T16:58:21+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ info ] applet.com/api/v1/category/all [运行时间：0.081005s][吞吐率：12.34req/s] [内存消耗：2,126.05kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE `category`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (6,5,7,4,8,9) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-03T16:58:22+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ info ] applet.com/api/v1/category/all [运行时间：0.098006s][吞吐率：10.20req/s] [内存消耗：2,125.89kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE `category`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (6,5,7,4,8,9) ) AND `image`.`delete_time` IS NULL [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-08-03T16:58:56+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ info ] applet.com/api/v1/category/all [运行时间：0.078004s][吞吐率：12.82req/s] [内存消耗：2,126.02kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE `category`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (6,5,7,4,8,9) ) AND `image`.`delete_time` IS NULL [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2017-08-03T17:22:24+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/by_category?id=2
+[ info ] applet.com/api/v1/product/by_category?id=2 [运行时间：0.082004s][吞吐率：12.19req/s] [内存消耗：2,219.23kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE (  `category_id` = 2 ) AND `product`.`delete_time` IS NULL [ RunTime:0.001000s ]

@@ -136,4 +136,41 @@
     5.note: 默认情况，数据表名和类名一一对应
 32.查找错误
     1.
-33.application/extra
+33.application/extra : setting.php 配置image路径
+34. banner接口实现完成
+    1.Banner图片路径：模型读取器，Image模型定义方法
+    2.修改了MissException类
+    3.创建了BaseModel
+    4.多版本支持
+        a.业务变更，不再根据id获取,通常根据传入版本号执行不同代码
+            缺点：不利于单元测试,代码冗余
+        b.开闭原则：扩展是开放的，修改是封闭的
+35.主题接口（theme,theme_product）
+   1. theme->product 多对多 需要第三张表中转theme_product
+   2. 命令行创建控制器类   php think make:controller api/v1/Theme
+    3.Theme->image 一对一
+    4.编写验证器 IDCollection
+    5.模型关联，在模型编写相关函数，在控制器调用模型使用with方法
+    6.数据异常，抛出自定义异常
+    7,在详情页时候，路由设置完整匹配
+    8.字段冗余 main_imgh_url和img_id
+    9.restful 基于资源，数据以模型方式返回
+36.Product控制器 (获取最新商品)
+    1.新建验证器count  （记得引入类）
+    2.临时隐藏summary字段
+    3.database 中配置，自动返回数据集 'resultset_type'  => 'collection',
+        http://applet.com/api/v1/theme?ids=4,6,5  会返回空数组
+        a.theme/getSimpleList
+        b.product/getRecent  没有查询的话，不能用isEmpty（）
+
+37.mysql
+    1.时间戳
+        select FROM_UNIXTIME(1501744530);
+        Select UNIX_TIMESTAMP('2017-8-3 15:15:30');
+38.分类(分类头图，分类商品信息) 新建category模型
+39.基础数据分层(概念)
+40.获取分类下的产品
+    1.getAllInCategory()    验证类和异常类记得引入
+41.API权限访问
+    1.api中用户获取令牌
+        客户端->(账号密码)->getToken(接口)

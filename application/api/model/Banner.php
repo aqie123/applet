@@ -11,12 +11,13 @@ use think\Db;
 use think\Exception;
 use think\Model;
 
-class Banner extends Model
+class Banner extends BaseModel
 {
     // protected $table = "Banner_item";  // 对应表名
     protected $hidden = ['update_time','delete_time'];
     /**
      * Banner关联表Banner_item (关联模型，外键，主键id)
+     * 一对多
      * @return \think\model\relation\HasMany
      */
     public function items(){

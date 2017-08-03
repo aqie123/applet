@@ -8,7 +8,7 @@
 namespace app\api\controller\v1;
 use app\api\validate\IdMustBePositiveInt;
 use app\api\validate\TestValidate;
-use app\lib\exception\BannerMissException;
+use app\lib\exception\MissException;
 use think\Exception;
 use think\Validate;
 use app\api\model\Banner as BannerModel;
@@ -38,11 +38,11 @@ class Banner
      * @http GET 请求方式
      * @param $id (传入不同ID获取banner)
      * @return mixed (返回轮播图信息)
-     * @throws BannerMissException
+     * @throws MissException
      */
     public function getBanner($id){
         // AOP面向切面编程
-        $validate = new IDMustBePositiveInt();
+        $validate = new IDMustBePositiveInt();  // 验证数据是否合法,推荐静态
         $validate->goCheck();
 
         // get find  all select
@@ -54,10 +54,14 @@ class Banner
         // $banner->visible(['id','name']);                  显示字段
         if(!$banner){
             // 自定义异常处理
-             throw new BannerMissException();
+            throw new MissException([
+                'msg' => '请求banner不存在',
+                'errorCode' => 40000
+            ]);
             // throw new Exception("服务器内部错误aqie");
         }
         // $data = $banner->toArray();   unset($data['delete_time']);
+
         return $banner; // 变成模型后会自动序列化成json
     }
 }

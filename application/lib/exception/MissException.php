@@ -12,10 +12,10 @@ namespace app\lib\exception;
  * Class BannerMissException
  * @package app\lib\exception
  */
-class BannerMissException extends BaseException
+class MissException extends BaseException
 {
     public $code = 404;
-    public $msg = "banner miss";
+    public $msg = "global:your required resource are not found";
     public $errorCode = 40000;
 
 }

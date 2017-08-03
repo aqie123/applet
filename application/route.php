@@ -45,4 +45,10 @@ Route::rule("list/:id","index/Lists/list"); // any => *  post传参
  */
 // 规范加api/版本号 z.cn/api/v1/banner/1
 
-Route::get('api/v1/banner/:id',"api/v1.Banner/getBanner");  // 注意访问方式(模块/控制器/操作方法)
+Route::get('api/:version/banner/:id',"api/:version.Banner/getBanner");  // 注意访问方式(模块/控制器/操作方法)
+Route::get('api/:version/theme','api/:version.theme/getSimpleList');  //（http://applet.com/api/v1/theme?ids=1,2,3）
+Route::get('api/:version/theme/:id','api/:version.theme/getComplexOne');  // (http://applet.com/api/v1/theme/1)
+Route::get('api/:version/product/recent','api/:version.product/getRecent');  // (http://applet.com/api/v1/product/recent?count=16)
+Route::get('api/:version/product/by_category','api/:version.product/getAllInCategory');  // (http://applet.com/api/v1/product/by_category?id=2)
+
+Route::get('api/:version/category/all','api/:version.category/getAllCategories');  // (http://applet.com/api/v1/category/all)

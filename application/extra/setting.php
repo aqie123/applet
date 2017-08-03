@@ -1,4 +1,4 @@
 <?php
 return [
-    'img_prefix' => 'http://applet.com'
+    'img_prefix' => 'http://applet.com/images'
 ];
