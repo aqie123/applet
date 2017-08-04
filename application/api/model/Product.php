@@ -16,6 +16,24 @@ class Product extends BaseModel
     'delete_time', 'main_img_id', 'pivot', 'from', 'category_id',
     'create_time', 'update_time'];
 
+    /**
+     * 关联模型 ProductImage
+     * 图片属性 一对多
+     */
+    public function imgs()
+    {
+        return $this->hasMany('ProductImage', 'product_id', 'id');
+    }
+
+    /**
+     * 关联模型商品属性
+     * @return \think\model\relation\HasMany
+     */
+    public function properties()
+    {
+        return $this->hasMany('ProductProperty', 'product_id', 'id');
+    }
+
     // 获取主题下产品图片完整url
     public function getMainImgUrlAttr($value, $data)
     {
@@ -41,8 +59,7 @@ class Product extends BaseModel
      * @param int $size
      * @return false|\PDOStatement|string|\think\Collection|\think\Paginator
      */
-    public static function getProductsByCategoryID(
-        $categoryID, $paginate = true, $page = 1, $size = 30)
+    public static function getProductsByCategoryID($categoryID, $paginate = true, $page = 1, $size = 30)
     {
         $query = self::where('category_id', '=', $categoryID);
         if (!$paginate)
@@ -57,6 +74,30 @@ class Product extends BaseModel
                 'page' => $page
             ]);
         }
+    }
+
+    /**
+     * 根据商品id获取商品
+     * @param $id （商品id）
+     * @return mixed
+     */
+    public static function getProductDetail($id){
+        // product_image 关联image模型
+        // $product = self::with('imgs.imgUrl,properties')->find($id); // 这个没有关联img_url
+
+        //*** 对查询结果排序
+        $product = self::with(
+            [
+                'imgs' => function ($query)
+                {
+                    $query->with(['imgUrl'])
+                        ->order('order', 'asc');
+                }
+            ])
+            ->with('properties')
+            ->find($id);
+
+        return $product;
     }
 
 }

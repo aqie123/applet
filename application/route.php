@@ -45,10 +45,29 @@ Route::rule("list/:id","index/Lists/list"); // any => *  post传参
  */
 // 规范加api/版本号 z.cn/api/v1/banner/1
 
+// banner
 Route::get('api/:version/banner/:id',"api/:version.Banner/getBanner");  // 注意访问方式(模块/控制器/操作方法)
+
+//theme
 Route::get('api/:version/theme','api/:version.theme/getSimpleList');  //（http://applet.com/api/v1/theme?ids=1,2,3）
 Route::get('api/:version/theme/:id','api/:version.theme/getComplexOne');  // (http://applet.com/api/v1/theme/1)
-Route::get('api/:version/product/recent','api/:version.product/getRecent');  // (http://applet.com/api/v1/product/recent?count=16)
-Route::get('api/:version/product/by_category','api/:version.product/getAllInCategory');  // (http://applet.com/api/v1/product/by_category?id=2)
 
+//product 路由分组
+Route::group('api/:version/product',function(){
+    Route::get('/by_category','api/:version.product/getAllInCategory');   // (http://applet.com/api/v1/product/by_category?id=2)
+    Route::get('/:id','api/:version.product/getOne',[],['id'=>'\d+']);   // (http://applet.com/api/v1/product/11)
+    Route::get('/recent','api/:version.product/getRecent');             // (http://applet.com/api/v1/product/recent?count=16)
+});
+/*
+Route::get('api/:version/product/by_category','api/:version.product/getAllInCategory');
+Route::get('api/:version/product/:id','api/:version.product/getOne',[],['id'=>'\d+']);
+Route::get('api/:version/product/recent','api/:version.product/getRecent');
+*/
+//category
 Route::get('api/:version/category/all','api/:version.category/getAllCategories');  // (http://applet.com/api/v1/category/all)
+
+// token
+Route::post('api/:version/token/user','api/:version.Token/getToken');  // (http://applet.com/api/v1/category/all)
+
+//address
+Route::post('api/:version/address','api/:version.Address/createOrUpdateAddress');    // (http://applet.com/api/v1/address)

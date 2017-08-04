@@ -51,4 +51,19 @@ class Product
             ->toArray();
         return $data;
     }
+
+    /**
+     * 根据id获取对应商品
+     * @param $id
+     * @return mixed
+     * @throws ProductException
+     */
+    public function getOne($id){
+        (new IdMustBePositiveInt())->goCheck();
+        $product  = ProductModel::getProductDetail($id);
+        if(!$product){
+            throw new ProductException();
+        }
+        return $product;
+    }
 }

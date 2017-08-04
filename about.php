@@ -174,3 +174,35 @@
 41.API权限访问
     1.api中用户获取令牌
         客户端->(账号密码)->getToken(接口)
+        a.是否合法,在有效期，有权限
+        b.openid 用户唯一标识
+        c.Token和用户信息存储在缓存中，加快访问速度
+    2.新建Token接口  （use承载模型，token模型生成令牌）
+        a.新建TokenGet验证器
+        b.创建user模型类
+        c.创建service层，在model层之上,model调用数据库访问层
+        d.获取token
+            小程序（code）->getToken
+        e.extra/wx.php  微信配置项
+        f.  APPID:  wxf293e83a91ef798d
+            AppSecret(小程序密钥): b0e9abd300e9864f218bc616b2e0eb50
+        g.application/common 公共文件可直接调用
+        h.创建 WeChatException
+        i:json 双引号
+        k: 数据库插入 直接调用create方法
+        l:service/Token.php 基类
+            生成令牌
+42.商品根据id查询
+    1.商品详情  ：product_image img_id关联image表
+    2. product -> product_image 一对多
+    3. 现在product模型中写关联img和properties模型函数，然后再控制器中调用
+    4. product_image ->image 一对一关系
+    5.tp5路由顺序匹配 id 必须是整数
+    6.  with()既可以用字符串，也可以用数组
+        Banner模型getBannerById模型嵌套
+43.地址管理接口 (新增保存数据接口 | 特定用户可以访问，需要保护)
+    访问受保护接口，必须携带令牌 (课程9-9)  (BaseValidate 重点看下)
+    1.新建Address控制器
+    2.新建AddressNew验证器
+    3.在Token编写根据Token获取
+
