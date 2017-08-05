@@ -71,3 +71,7 @@ Route::post('api/:version/token/user','api/:version.Token/getToken');  // (http:
 
 //address
 Route::post('api/:version/address','api/:version.Address/createOrUpdateAddress');    // (http://applet.com/api/v1/address)
+
+// 测试前置方法
+Route::get('api/:version/second','api/:version.Address/second');    // (http://applet.com/api/v1/second)
+Route::get('api/:version/third','api/:version.Address/third');    // (http://applet.com/api/v1/third)

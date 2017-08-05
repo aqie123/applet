@@ -1,0 +1,6 @@
+---------------------------------------------------------------
+[ 2017-08-05T08:28:15+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/product/by_category?id=2
+[ info ] applet.com/api/v1/product/by_category?id=2 [运行时间：0.146008s][吞吐率：6.85req/s] [内存消耗：2,251.15kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE (  `category_id` = 2 ) AND `product`.`delete_time` IS NULL [ RunTime:0.002000s ]
