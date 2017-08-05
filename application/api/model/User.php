@@ -12,12 +12,12 @@ namespace app\api\model;
 class User extends BaseModel
 {
     protected $autoWriteTimestamp = true;
-
+    // 关联order模型
     public function orders()
     {
         return $this->hasMany('Order', 'user_id', 'id');
     }
-
+    // 关联地址模型 一对一 也是有方向的  (没有外键这方定义关联关系用hasOne)
     public function address()
     {
         return $this->hasOne('UserAddress', 'user_id', 'id');
