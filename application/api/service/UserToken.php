@@ -130,6 +130,7 @@ class UserToken extends Token
         $cachedValue = $wxResult;
         $cachedValue['uid'] = $uid;
         $cachedValue['scope'] = ScopeEnum::User;
+        // $cachedValue['scope'] = 15;  // 可以测试权限不够
         return $cachedValue;
     }
 

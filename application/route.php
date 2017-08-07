@@ -75,3 +75,9 @@ Route::post('api/:version/address','api/:version.Address/createOrUpdateAddress')
 // 测试前置方法
 Route::get('api/:version/second','api/:version.Address/second');    // (http://applet.com/api/v1/second)
 Route::get('api/:version/third','api/:version.Address/third');    // (http://applet.com/api/v1/third)
+
+// order
+Route::post('api/:version/order','api/:version.Order/placeOrder');  // (http://applet.com/api/v1/order)
+
+// address
+Route::post('api/:version/pay/pre_order','api/:version.Pay/getPreOrder');

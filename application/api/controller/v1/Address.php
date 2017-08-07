@@ -16,7 +16,7 @@ use app\lib\exception\UserException;
 use think\Controller;
 use think\Exception;
 
-class Address extends Controller
+class Address extends BaseController
 {
     protected $beforeActionList = [
         'first' => ['only' => 'second,third'],      // 只有second才需要执行前置方法first
@@ -31,9 +31,7 @@ class Address extends Controller
     public function third(){
         echo 'third';
     }
-    protected function checkPrimaryScope(){
-//        $scope = Token::
-    }
+
     /**
      * 更新或者创建用户收获地址
      * 模型管理，新增和更新可以用同一个方法

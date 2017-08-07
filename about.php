@@ -213,4 +213,29 @@
     1.前置方法
     2.call_user_func — 把第一个参数作为回调函数调用 可以调用类中方法
     3,通过前置方法，利用scope作用域,如果小于16就中断作用域
-
+    4.  新建BaseController
+        Address 控制器，新建ForbiddenException,在基类控制器调用Token checkPrimaryScope()
+        判断Token是否合法
+45.订单接口 (OrderController)
+    1.创建订单
+        a.检测库存
+        b.订单支付
+    2.新建OrderPlace验证器
+    3.在service新建Order模型
+        1.新建OrderException
+        2.在model新建Order模型
+        3.Project Settings > Inspections > PHP > Undefined > Undefined field
+        4.model新建OrderProduct模型
+        5.10-10 10-11反了  snapOrder(方法重写) 10-12 和10-10重复   10-15 10-16重的
+        6.一对多模型，先保存一再保存多
+        7. createOrderByTrans(加入事物)
+46.WebSocket
+47.自动写入
+48.支付
+    1.新建Pay 控制器
+    2.新建service/Pay模型
+    3.https://pay.weixin.qq.com/wiki/doc/api/wxa/wxa_api.php?chapter=9_1 (统一下单)
+    4.用户访问接口携带令牌，就能拿到用户openid
+    5.如何从pay调用order (getProductStatus)
+    6.在service/order 创建checkOrderStock(在service/pay模型调用) 10-20
+        通过orderID拿到oProducts数据->(根据order_id 在order_products)表中查询出数据
