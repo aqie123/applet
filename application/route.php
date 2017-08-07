@@ -79,5 +79,6 @@ Route::get('api/:version/third','api/:version.Address/third');    // (http://app
 // order
 Route::post('api/:version/order','api/:version.Order/placeOrder');  // (http://applet.com/api/v1/order)
 
-// address
+// pay
 Route::post('api/:version/pay/pre_order','api/:version.Pay/getPreOrder');
+Route::post('api/:version/pay/notify','api/:version.Pay/receiveNotify');

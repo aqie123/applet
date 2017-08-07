@@ -239,3 +239,18 @@
     5.如何从pay调用order (getProductStatus)
     6.在service/order 创建checkOrderStock(在service/pay模型调用) 10-20
         通过orderID拿到oProducts数据->(根据order_id 在order_products)表中查询出数据
+    7.在service/Token 新建isValidOperate()
+    8.lib/enum 创建配置文件
+    9.微信预订单生成
+    10.调用微信sdk
+        1.extend/WxPay目录
+        2.Loader::import(子文件.文件名，类所在目录，后缀名); 加载第三方类库
+        3.WxPay.Data.php :统一下单
+        4.  curl_setopt($ch,CURLOPT_SSL_VERIFYPEER,TRUE);
+            curl_setopt($ch,CURLOPT_SSL_VERIFYHOST,2);//严格校验  WxPay.Api.php 改为false
+    11. 微信支付 服务端：调用统一下单接口
+                 客户端 ： 调用微信支付API 通过服务器解析 wxOrder返回给小程序参数
+    12.签名：防止参数篡改
+            比对客户端传来签名，和微信自己算签名
+    13. 支付->下单->预订单 服务器返回参数 -> 调用小程序支付接口 ->小程序向微信发起支付
+    14.新建类service/WxNotify继承WxPayNotify

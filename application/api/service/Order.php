@@ -228,6 +228,7 @@ class Order
         return $userAddress->toArray();
     }
 
+    // 库存量检测
     public function checkOrderStock($orderID)
     {
         //        if (!$orderNo)
