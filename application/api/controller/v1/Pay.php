@@ -27,7 +27,7 @@ class Pay extends BaseController
         return $pay->pay();
     }
 
-    // 向微信提供的异步接口(每隔一段时间调用一次,知道收到服务器正确处理通知)
+    // 向微信提供的异步接口(每隔一段时间调用一次,直到收到服务器正确处理通知)
     // 1.第三次检测库存量
     // 2.真实更新订单状态
     // 3.减库存
@@ -36,7 +36,7 @@ class Pay extends BaseController
     // 特点 ： 1.post接收,2.xml数据，3.url地址不能添加?参数
     public function receiveNotify(){
         $notify = new WxNotify();
-        $notify->handle();
+        $notify->handle();       // applet\extend\WxPay\WxPay.Notify.php
         // $xmlData = file_get_contents('php://input');
         //        Log::error($xmlData);
 
@@ -45,5 +45,12 @@ class Pay extends BaseController
         //            $xmlData);
         //        return $result;
         //        Log::error($xmlData);
+    }
+
+    // 将上面代码取消注释  用来断点调试微信
+    public function redirectNotify()
+    {
+        $notify = new WxNotify();
+        $notify->handle();
     }
 }

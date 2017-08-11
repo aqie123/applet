@@ -79,6 +79,11 @@ Route::get('api/:version/third','api/:version.Address/third');    // (http://app
 // order
 Route::post('api/:version/order','api/:version.Order/placeOrder');  // (http://applet.com/api/v1/order)
 
+//不想把所有查询都写在一起，所以增加by_user，很好的REST与RESTFul的区别
+Route::get('api/:version/order/by_user', 'api/:version.Order/getSummaryByUser');
+
 // pay
 Route::post('api/:version/pay/pre_order','api/:version.Pay/getPreOrder');
 Route::post('api/:version/pay/notify','api/:version.Pay/receiveNotify');
+// 断点调试转发接口
+Route::post('api/:version/pay/re_notify', 'api/:version.Pay/redirectNotify');

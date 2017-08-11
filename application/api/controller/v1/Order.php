@@ -54,4 +54,9 @@ class Order extends BaseController
         $status = $order->place($uid, $products);
         return $status;
     }
+
+    public function getSummaryByUser($page = 1,$size = 15){
+        // 令牌中获取用户uid
+
+    }
 }

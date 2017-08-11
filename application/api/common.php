@@ -27,6 +27,7 @@ function curl_post($url, array $params = array())
     return ($data);
 }
 
+// 传递原始字符串
 function curl_post_raw($url, $rawData)
 {
     $ch = curl_init();

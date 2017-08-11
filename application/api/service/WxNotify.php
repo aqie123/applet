@@ -8,7 +8,7 @@
 
 namespace app\api\service;
 
-use app\api\model\Order;
+use app\api\model\Order as OrderModel;
 use app\api\model\Product;
 use app\api\service\Order as OrderService;
 use app\lib\enum\OrderStatusEnum;
@@ -47,21 +47,23 @@ class WxNotify extends \WxPayNotify
             $orderNo = $data['out_trade_no'];
             Db::startTrans();
             try {
-                $order = Order::where('order_no', '=', $orderNo)->lock(true)->find();
+                $order = OrderModel::where('order_no', '=', $orderNo)->lock(true)->find();
                 // 只处理订单状态为1,进行库存检测
                 if ($order->status == 1) {
                     $service = new OrderService();
+                    // status 订单库存量状态
                     $status = $service->checkOrderStock($order->id); // 订单模型读取订单id
                     if ($status['pass']) {
                         // 更新订单状态
                         $this->updateOrderStatus($order->id, true);
                         // 减库存
                         $this->reduceStock($status);
-                    } else {
+                    } else {        // 微信支付通过,库存量检测未通过,只更改状态(已支付库存不足)
                         $this->updateOrderStatus($order->id, false);
                     }
                 }
                 Db::commit();
+                return true;
             } catch (Exception $ex) {
                 Db::rollback();
                 Log::error($ex);
@@ -83,7 +85,7 @@ class WxNotify extends \WxPayNotify
         // $pIDs = array_keys($status['pStatus']);
         foreach ($status['pStatusArray'] as $singlePStatus) {
             Product::where('id', '=', $singlePStatus['id'])
-                ->setDec('stock', $singlePStatus['count']);
+                ->setDec('stock', $singlePStatus['count']);     // 直接在数据库减库存
         }
     }
 }

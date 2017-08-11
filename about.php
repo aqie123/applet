@@ -248,9 +248,19 @@
         3.WxPay.Data.php :统一下单
         4.  curl_setopt($ch,CURLOPT_SSL_VERIFYPEER,TRUE);
             curl_setopt($ch,CURLOPT_SSL_VERIFYHOST,2);//严格校验  WxPay.Api.php 改为false
+        5.如果没有填写商户号MCHID
     11. 微信支付 服务端：调用统一下单接口
                  客户端 ： 调用微信支付API 通过服务器解析 wxOrder返回给小程序参数
     12.签名：防止参数篡改
             比对客户端传来签名，和微信自己算签名
     13. 支付->下单->预订单 服务器返回参数 -> 调用小程序支付接口 ->小程序向微信发起支付
     14.新建类service/WxNotify继承WxPayNotify
+        1.链式方法 lock 查询锁    (悲观锁，乐观锁)
+    15.Ngrok 反向代理
+       extra\secure.php  配置路径
+    16.下单接口，支付接口，微信回调接口
+        1.测试pay/Notify  报错：未定义数组索引 HTTP_RAW_POST_DATA
+            支付接口：order表状态会变；product表库存会变
+47.
+    1.Order 控制器 getSummaryByUser()
+        新增PagingParameter验证器
