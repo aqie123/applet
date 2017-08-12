@@ -38,7 +38,8 @@ class Order extends BaseController
      * ()
      */
     protected $beforeActionList = [
-        'checkExclusiveScope' => ['only' => 'placeOrder']
+        'checkExclusiveScope' => ['only' => 'placeOrder'],
+        'checkPrimaryScope' => ['only' => 'getDetail,getSummaryByUser'],
     ];
 
     /**
@@ -55,8 +56,38 @@ class Order extends BaseController
         return $status;
     }
 
+    // 订单列表
     public function getSummaryByUser($page = 1,$size = 15){
         // 令牌中获取用户uid
+        (new PagingParameter())->goCheck();
+        $uid = Token::getCurrentUid();
+        $pagingOrders = OrderModel::getSummaryByUser($uid, $page, $size);
+        if ($pagingOrders->isEmpty())                   // 返回自定义关联数组
+        {
+            return [
+                'current_page' => $pagingOrders->getcurrentPage(),
+                'data' => []
+            ];
+        }
+        $data = $pagingOrders->hidden(['snap_items', 'snap_address'])
+            ->toArray();
+        return [
+            'current_page' => $pagingOrders->currentPage(),
+            'data' => $data
+        ];
 
+
+    }
+
+    // 订单详情
+    public function getDetail($id){
+        (new IDMustBePositiveInt())->goCheck();
+        $orderDetail = OrderModel::get($id);
+        if (!$orderDetail)
+        {
+            throw new OrderException();
+        }
+        return $orderDetail
+            ->hidden(['prepay_id']);
     }
 }

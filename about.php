@@ -261,6 +261,10 @@
     16.下单接口，支付接口，微信回调接口
         1.测试pay/Notify  报错：未定义数组索引 HTTP_RAW_POST_DATA
             支付接口：order表状态会变；product表库存会变
-47.
-    1.Order 控制器 getSummaryByUser()
+47.订单列表
+    1.Order 控制器下 getSummaryByUser()
         新增PagingParameter验证器
+        Order模型内部新建 getSummaryByUser()
+48.订单详情
+    1.model/Order模型中定义读取器，来格式化显示数据 (snap_items,snap_address)
+    2.

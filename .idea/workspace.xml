@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29fbcb5f-4a2b-4120-a9d3-8ffd8cfc4a89" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/api/validate/PagingParameter.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.php" afterPath="$PROJECT_DIR$/about.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/common.php" afterPath="$PROJECT_DIR$/application/api/common.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/controller/v1/Order.php" afterPath="$PROJECT_DIR$/application/api/controller/v1/Order.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/controller/v1/Pay.php" afterPath="$PROJECT_DIR$/application/api/controller/v1/Pay.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/service/WxNotify.php" afterPath="$PROJECT_DIR$/application/api/service/WxNotify.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/extra/secure.php" afterPath="$PROJECT_DIR$/application/extra/secure.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/model/Order.php" afterPath="$PROJECT_DIR$/application/api/model/Order.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/route.php" afterPath="$PROJECT_DIR$/application/route.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extend/WxPay/WxPay.Api.php" afterPath="$PROJECT_DIR$/extend/WxPay/WxPay.Api.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,18 +31,8 @@
       <file leaf-file-name="about.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/about.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7155">
-              <caret line="265" column="28" lean-forward="false" selection-start-line="265" selection-start-column="28" selection-end-line="265" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PagingParameter.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/api/validate/PagingParameter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="269">
+              <caret line="259" column="29" lean-forward="true" selection-start-line="259" selection-start-column="29" selection-end-line="259" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -56,8 +41,8 @@
       <file leaf-file-name="route.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/route.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1944">
-              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state relative-caret-position="1890">
+              <caret line="78" column="8" lean-forward="false" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -66,12 +51,36 @@
       <file leaf-file-name="Order.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/api/controller/v1/Order.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="57" column="21" lean-forward="false" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="36" />
+            <state relative-caret-position="1593">
+              <caret line="92" column="1" lean-forward="false" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
               <folding>
                 <element signature="e#119#157#0#PHP" expanded="true" />
-                <element signature="e#961#1026#0#PHP" expanded="false" />
-                <element signature="e#1101#1403#0#PHP" expanded="false" />
+                <element signature="e#1175#1477#0#PHP" expanded="false" />
+                <element signature="e#1495#2169#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Paginator.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Paginator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3294">
+              <caret line="135" column="27" lean-forward="false" selection-start-line="135" selection-start-column="27" selection-end-line="135" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Order.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/api/model/Order.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <folding>
+                <element signature="e#278#450#0#PHP" expanded="false" />
+                <element signature="e#456#605#0#PHP" expanded="false" />
+                <element signature="e#750#1029#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -135,7 +144,6 @@
         <option value="$PROJECT_DIR$/application/api/controller/v1/Address.php" />
         <option value="$PROJECT_DIR$/application/api/service/UserToken.php" />
         <option value="$PROJECT_DIR$/application/api/validate/OrderPlace.php" />
-        <option value="$PROJECT_DIR$/application/api/model/Order.php" />
         <option value="$PROJECT_DIR$/application/lib/exception/OrderException.php" />
         <option value="$PROJECT_DIR$/application/api/model/OrderProduct.php" />
         <option value="$PROJECT_DIR$/application/api/controller/BaseController.php" />
@@ -148,10 +156,11 @@
         <option value="$PROJECT_DIR$/extend/WxPay/WxPay.Api.php" />
         <option value="$PROJECT_DIR$/application/api/controller/v1/Pay.php" />
         <option value="$PROJECT_DIR$/application/api/common.php" />
+        <option value="$PROJECT_DIR$/application/api/validate/PagingParameter.php" />
         <option value="$PROJECT_DIR$/application/api/controller/v1/Order.php" />
         <option value="$PROJECT_DIR$/application/route.php" />
         <option value="$PROJECT_DIR$/about.php" />
-        <option value="$PROJECT_DIR$/application/api/validate/PagingParameter.php" />
+        <option value="$PROJECT_DIR$/application/api/model/Order.php" />
       </list>
     </option>
   </component>
@@ -168,8 +177,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="317" />
-    <option name="y" value="17" />
+    <option name="x" value="535" />
+    <option name="y" value="26" />
     <option name="width" value="1228" />
     <option name="height" value="900" />
   </component>
@@ -213,35 +222,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Changed Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="applet" type="cbb8eebc:String" user="applet" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="applet" type="cbb8eebc:String" user="applet" />
-              <item name="application" type="cbb8eebc:String" user="application" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="applet" type="cbb8eebc:String" user="applet" />
-              <item name="application" type="cbb8eebc:String" user="application" />
-              <item name="api" type="cbb8eebc:String" user="api" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="applet" type="cbb8eebc:String" user="applet" />
-              <item name="application" type="cbb8eebc:String" user="application" />
-              <item name="api" type="cbb8eebc:String" user="api" />
-              <item name="service" type="cbb8eebc:String" user="service" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -280,7 +260,27 @@
               <item name="applet" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="applet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="applet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="validate" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="applet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="applet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="applet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="applet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="exception" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="applet" type="b2602c69:ProjectViewProjectNode" />
@@ -298,6 +298,35 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Changed Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="applet" type="cbb8eebc:String" user="applet" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="applet" type="cbb8eebc:String" user="applet" />
+              <item name="application" type="cbb8eebc:String" user="application" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="applet" type="cbb8eebc:String" user="applet" />
+              <item name="application" type="cbb8eebc:String" user="application" />
+              <item name="api" type="cbb8eebc:String" user="api" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="applet" type="cbb8eebc:String" user="applet" />
+              <item name="application" type="cbb8eebc:String" user="application" />
+              <item name="api" type="cbb8eebc:String" user="api" />
+              <item name="service" type="cbb8eebc:String" user="service" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -447,11 +476,13 @@
       <workItem from="1502415645527" duration="63000" />
       <workItem from="1502428200662" duration="2858000" />
       <workItem from="1502431188556" duration="74000" />
+      <workItem from="1502496900095" duration="1670000" />
+      <workItem from="1502498656062" duration="193000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255060000" />
+    <option name="totallyTimeSpent" value="256923000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -463,10 +494,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="317" y="17" width="1228" height="900" extended-state="0" />
+    <frame x="535" y="26" width="1228" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21746576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27311644" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32810047" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -499,13 +530,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/api/validate/TokenGet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/api/controller/v1/Token.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -758,13 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/model/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/api/service/Token.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -836,39 +853,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/controller/v1/Order.php">
+    <entry file="file://$PROJECT_DIR$/application/api/validate/PagingParameter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="57" column="21" lean-forward="false" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="36" />
-          <folding>
-            <element signature="e#119#157#0#PHP" expanded="true" />
-            <element signature="e#961#1026#0#PHP" expanded="false" />
-            <element signature="e#1101#1403#0#PHP" expanded="false" />
-          </folding>
+        <state relative-caret-position="189">
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Paginator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3294">
+          <caret line="135" column="27" lean-forward="false" selection-start-line="135" selection-start-column="27" selection-end-line="135" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/route.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1944">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state relative-caret-position="1890">
+          <caret line="78" column="8" lean-forward="false" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/controller/v1/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1593">
+          <caret line="92" column="1" lean-forward="false" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
+          <folding>
+            <element signature="e#119#157#0#PHP" expanded="true" />
+            <element signature="e#1175#1477#0#PHP" expanded="false" />
+            <element signature="e#1495#2169#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/about.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7155">
-          <caret line="265" column="28" lean-forward="false" selection-start-line="265" selection-start-column="28" selection-end-line="265" selection-end-column="28" />
+        <state relative-caret-position="269">
+          <caret line="259" column="29" lean-forward="true" selection-start-line="259" selection-start-column="29" selection-end-line="259" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/validate/PagingParameter.php">
+    <entry file="file://$PROJECT_DIR$/application/api/model/Order.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="255">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#278#450#0#PHP" expanded="false" />
+            <element signature="e#456#605#0#PHP" expanded="false" />
+            <element signature="e#750#1029#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
