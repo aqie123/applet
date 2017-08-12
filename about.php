@@ -268,3 +268,6 @@
 48.订单详情
     1.model/Order模型中定义读取器，来格式化显示数据 (snap_items,snap_address)
     2.
+二：小程序
+    a.处理服务器传递过来数据
+    b.

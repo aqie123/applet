@@ -1,0 +1,165 @@
+---------------------------------------------------------------
+[ 2017-08-12T12:51:33+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.677039s][吞吐率：1.48req/s] [内存消耗：2,421.64kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.076005s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE (  `id` = 1 ) AND `banner`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-12T12:59:12+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.152008s][吞吐率：6.58req/s] [内存消耗：2,422.50kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE (  `id` = 1 ) AND `banner`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-12T12:59:56+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.162009s][吞吐率：6.17req/s] [内存消耗：2,422.31kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE (  `id` = 1 ) AND `banner`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-12T13:08:42+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.146008s][吞吐率：6.85req/s] [内存消耗：2,422.50kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE (  `id` = 1 ) AND `banner`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-12T13:08:58+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.144008s][吞吐率：6.94req/s] [内存消耗：2,422.31kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE (  `id` = 1 ) AND `banner`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-12T13:12:25+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.149008s][吞吐率：6.71req/s] [内存消耗：2,422.31kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE (  `id` = 1 ) AND `banner`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-08-12T13:14:04+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.141008s][吞吐率：7.09req/s] [内存消耗：2,422.31kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE (  `id` = 1 ) AND `banner`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-12T13:14:07+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.136007s][吞吐率：7.35req/s] [内存消耗：2,422.31kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE (  `id` = 1 ) AND `banner`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-08-12T13:15:00+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.147008s][吞吐率：6.80req/s] [内存消耗：2,422.50kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE (  `id` = 1 ) AND `banner`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-12T13:18:02+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.150008s][吞吐率：6.67req/s] [内存消耗：2,422.31kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE (  `id` = 1 ) AND `banner`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-12T13:18:56+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.164010s][吞吐率：6.10req/s] [内存消耗：2,422.31kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE (  `id` = 1 ) AND `banner`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-12T13:27:01+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.206012s][吞吐率：4.85req/s] [内存消耗：2,422.50kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE (  `id` = 1 ) AND `banner`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-12T13:37:49+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.166009s][吞吐率：6.02req/s] [内存消耗：2,422.50kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE (  `id` = 1 ) AND `banner`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-12T13:40:55+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.152008s][吞吐率：6.58req/s] [内存消耗：2,422.31kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE (  `id` = 1 ) AND `banner`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-12T13:43:31+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/banner/1
+[ info ] applet.com/api/v1/banner/1 [运行时间：0.134007s][吞吐率：7.46req/s] [内存消耗：2,422.31kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE (  `id` = 1 ) AND `banner`.`delete_time` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE (  `banner_id` = 1 ) AND `banner_item`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (65,2,3,1) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
