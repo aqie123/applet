@@ -15,15 +15,32 @@ Page({
   },
   _loadData:function(){
     var id = 1;
-    var data = home.getBannerData(id,(res) =>{
-      console.log(res);
+    var that = this;
+    // 获取banner信息
+    home.getBannerData(id,(res) =>{
+      //console.log(res);                        // 在控制台展示后台banner数据
+      that.setData({
+        'bannerArr': res
+      });
+    });
+
+    // 获取精选主题
+    home.getThemeData((data) =>{
+      //console.log(data);
+      that.setData({
+        'themeArr':data
+      });
+    });
+
+    // 获取最近新品
+    home.getProductorData((data) => {
+      that.setData({
+        'productsArr': data
+      });
     });
     
   },
-  // 被上面箭头函数替代
-  callBack: function (res) {
-    console.log(res);
-  }
+  
 
 
 

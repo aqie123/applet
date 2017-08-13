@@ -1,9 +1,11 @@
+
+import {Config} from '../utils/config.js';
 class Base{
   constructor(){
-    this.baseRequestUrl = 'http://applet/api/v1/';
+    this.baseRequestUrl = Config.restUrl;
   }
 
-  request(params,){
+  request(params){
     var url = this.baseRequestUrl + params.url;
 
     if(!params.type){
@@ -18,14 +20,13 @@ class Base{
         'token' : wx.getStorageSync('token')     // 同步方法缓存中读取
       },
       success:function(res){
-        if(params.sCallBack){
-          params.sCallBack(res);
-        }
+        params.sCallback&&params.sCallback(res.data);
         
       },
       fail:function(err){
-
+        console.log(err);
       }
     })
   }
 }
+export {Base};
