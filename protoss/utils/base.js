@@ -2,6 +2,7 @@
 import {Config} from '../utils/config.js';
 class Base{
   constructor(){
+    "use strict";
     this.baseRequestUrl = Config.restUrl;
   }
 
@@ -28,5 +29,11 @@ class Base{
       }
     })
   }
+  
+  /*获得元素上的绑定的值*/
+  getDataSet(event, key) {
+    return event.currentTarget.dataset[key];
+  };
+
 }
 export {Base};

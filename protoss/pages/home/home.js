@@ -13,6 +13,7 @@ Page({
   onLoad:function(){
     this._loadData();
   },
+
   _loadData:function(){
     var id = 1;
     var that = this;
@@ -39,6 +40,25 @@ Page({
       });
     });
     
+  },
+
+  /*跳转到商品详情*/
+  onProductsItemTap: function (event) {
+    // console.log(event);
+    var id = home.getDataSet(event, 'id');
+    
+    wx.navigateTo({
+      url: '../product/product?id=' + id
+    })
+  },
+
+  /*跳转到主题列表*/
+  onThemesItemTap: function (event) {
+    var id = home.getDataSet(event, 'id');
+    var name = home.getDataSet(event, 'name');
+    wx.navigateTo({
+      url: '../theme/theme?id=' + id + '&name=' + name
+    })
   },
   
 

@@ -21,3 +21,14 @@
   base简化输出，home_model进一步简化数据
 6.最近新品使用模板
   tpls/products 最近新品模板  记得引入
+7.swiper图片绑定id
+  event.currentTarget.dataset.id  id就是data后面跟着的值，自定义
+  在base基类定义通用方法
+8.精选主题绑定id
+9.app.json 中配置导航栏
+10.主题页面
+  a.home.js 通过点击将id传到theme页面，在theme.js onload函数接收
+  b.theme 模板中 键名对应 <block wx:for="{{productsData}}">
+  c.调试 APPData有所有绑定数据
+11.在home.json配置导航栏名字
+12.
