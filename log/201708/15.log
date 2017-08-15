@@ -2056,3 +2056,51 @@
 [ sql ] [ SQL ] SELECT * FROM `category` WHERE `category`.`delete_time` IS NULL [ RunTime:0.001000s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.027002s ]
 [ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (6,5,7,4,8,9) ) AND `image`.`delete_time` IS NULL [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2017-08-15T17:58:00+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ info ] applet.com/api/v1/category/all [运行时间：0.106514s][吞吐率：9.39req/s] [内存消耗：2,162.00kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003501s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.010501s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE `category`.`delete_time` IS NULL [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (6,5,7,4,8,9) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001500s ]
+---------------------------------------------------------------
+[ 2017-08-15T17:59:11+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ info ] applet.com/api/v1/category/all [运行时间：0.103013s][吞吐率：9.71req/s] [内存消耗：2,162.00kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.010502s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE `category`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (6,5,7,4,8,9) ) AND `image`.`delete_time` IS NULL [ RunTime:0.003500s ]
+---------------------------------------------------------------
+[ 2017-08-15T17:59:41+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ info ] applet.com/api/v1/category/all [运行时间：0.079010s][吞吐率：12.66req/s] [内存消耗：2,162.00kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE `category`.`delete_time` IS NULL [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (6,5,7,4,8,9) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2017-08-15T18:00:04+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ info ] applet.com/api/v1/category/all [运行时间：0.086011s][吞吐率：11.63req/s] [内存消耗：2,162.00kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.007501s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE `category`.`delete_time` IS NULL [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.007501s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (6,5,7,4,8,9) ) AND `image`.`delete_time` IS NULL [ RunTime:0.001500s ]
+---------------------------------------------------------------
+[ 2017-08-15T18:01:20+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ info ] applet.com/api/v1/category/all [运行时间：0.071509s][吞吐率：13.98req/s] [内存消耗：2,162.00kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE `category`.`delete_time` IS NULL [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (6,5,7,4,8,9) ) AND `image`.`delete_time` IS NULL [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2017-08-15T18:03:34+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ info ] applet.com/api/v1/category/all [运行时间：0.092512s][吞吐率：10.81req/s] [内存消耗：2,162.00kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=applet;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.012002s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE `category`.`delete_time` IS NULL [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.010002s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE (  `id` IN (6,5,7,4,8,9) ) AND `image`.`delete_time` IS NULL [ RunTime:0.000500s ]
