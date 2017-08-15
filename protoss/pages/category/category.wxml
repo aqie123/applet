@@ -1,0 +1,4 @@
+<!--category.wxml-->
+
+<import src="../tpls/category/category-tpl.wxml"/>
+<view class="container category-container"></view>

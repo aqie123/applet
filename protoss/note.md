@@ -30,5 +30,12 @@
   a.home.js 通过点击将id传到theme页面，在theme.js onload函数接收
   b.theme 模板中 键名对应 <block wx:for="{{productsData}}">
   c.调试 APPData有所有绑定数据
-11.在home.json配置导航栏名字
-12.
+11.在home.json配置导航栏名字;通过传入name动态设置导航栏名称
+12.product 详情
+  a.picker range(可选字段,在product.js data设置)
+    product.js获取到当前用户选定number,(执行事件bindPickerChange)再通过this.setData进行数据绑定
+    在data里设置初始值
+    缺货禁用(数据绑定改变样式)
+  b.商品详情下面 在wxml直接绑定，动态改变样式,绑定序列号
+    hidden=true 就会隐藏
+13.商品分类

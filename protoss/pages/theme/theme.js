@@ -17,13 +17,16 @@ Page({
   onLoad: function (option) {
     this.data.titleName = option.name;
     this.data.id = option.id;
-    wx.setNavigationBarTitle({
-      title: option.name
-    });
+    
     this._loadData();
 
   },
-  
+  onReady:function(){
+    wx.setNavigationBarTitle({
+      title: this.data.titleName
+    });
+  },
+
   /*加载所有数据*/
   _loadData: function (callback) {
     var that = this;
