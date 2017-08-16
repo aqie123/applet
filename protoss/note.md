@@ -40,3 +40,6 @@
     hidden=true 就会隐藏
 13.商品分类
     这个要仔细看
+14.购物车
+  a.商品详情页添加购物车  (onAddingToCartTap);引入cart类
+  b.
