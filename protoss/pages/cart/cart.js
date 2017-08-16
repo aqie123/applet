@@ -149,6 +149,13 @@ Page({
 
     cart.delete(id);  //内存中删除该商品
   },
+
+  /*提交订单*/
+  submitOrder: function () {
+    wx.navigateTo({
+      url: '../order/order?account=' + this.data.account + '&from=cart'
+    });
+  },
  
 
 

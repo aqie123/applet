@@ -33,7 +33,7 @@ class Token
             ->header('token');
         // 从缓存中获取对应Token Value值
         $vars = Cache::get($token);
-        if(!vars){
+        if(!$vars){
             throw new TokenException();
         }else {
             if(!is_array($vars))

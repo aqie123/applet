@@ -10,6 +10,7 @@ class Token {
     this.tokenUrl = Config.restUrl + 'token/user';
   }
 
+  // 校验当前令牌是否有效
   verify() {
     var token = wx.getStorageSync('token');
     if (!token) {
@@ -20,6 +21,7 @@ class Token {
     }
   }
 
+  // 携带令牌去服务器校验
   _veirfyFromServer(token) {
     var that = this;
     wx.request({
@@ -30,6 +32,7 @@ class Token {
       },
       success: function (res) {
         var valid = res.data.isValid;
+        // 令牌不合法
         if (!valid) {
           that.getTokenFromServer();
         }
@@ -37,6 +40,7 @@ class Token {
     })
   }
 
+  // 从服务器获取Token
   getTokenFromServer(callBack) {
     var that = this;
     wx.login({
@@ -47,6 +51,7 @@ class Token {
           data: {
             code: res.code
           },
+          // 服务器返回token保存到缓存中
           success: function (res) {
             wx.setStorageSync('token', res.data.token);
             callBack && callBack(res.data.token);

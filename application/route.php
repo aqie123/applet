@@ -68,6 +68,9 @@ Route::get('api/:version/category/all','api/:version.category/getAllCategories')
 
 // token
 Route::post('api/:version/token/user','api/:version.Token/getToken');  // (http://applet.com/api/v1/category/all)
+Route::post('api/:version/token/app', 'api/:version.Token/getAppToken');
+Route::post('api/:version/token/verify', 'api/:version.Token/verifyToken');
+
 
 //address
 Route::post('api/:version/address','api/:version.Address/createOrUpdateAddress');    // (http://applet.com/api/v1/address)

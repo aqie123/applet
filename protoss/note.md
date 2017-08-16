@@ -53,3 +53,14 @@
     5.记录购物车页面勾选状态 cart.js onHide()
 15. 删除远程分支
   a.git push origin --delete 2017/8/15
+16. 订单详情页
+  a.点击购物车箭头进入订单详情预览页面 
+  b.缓存中读取商品信息 
+17.收货地址
+  a.utils/新建address类
+18.新增API令牌验证接口
+  a.utils/新建token类
+  b.token类 getTokenFromServer success回调拿到code
+  c.新建app.js,在小程序初始化时候验证Token
+  d.重构base下request方法
+  e.防止重复请求
