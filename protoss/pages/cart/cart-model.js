@@ -110,7 +110,7 @@ class Cart extends Base {
       counts1 = 0,
       counts2 = 0;
     for (let i = 0; i < data.length; i++) {
-      if (flag) {
+      if (flag) {       // true考虑商品选中状态
         if (data[i].selectStatus) {
           counts1 += data[i].counts;
           counts2++;
@@ -125,6 +125,55 @@ class Cart extends Base {
       counts2: counts2
     };
   };
+
+  /*
+    * 增加商品数目
+    * */
+  addCounts(id) {
+    this._changeCounts(id, 1);
+  };
+
+  /*
+  * 购物车减
+  * */
+  cutCounts(id) {
+    this._changeCounts(id, -1);
+  };
+
+  /*
+    * 修改商品数目
+    * params:
+    * id - {int} 商品id
+    * counts -{int} 数目
+    * */
+  _changeCounts(id, counts) {
+    var cartData = this.getCartDataFromLocal(),
+      hasInfo = this._isHasThatOne(id, cartData);
+      // 存在并且数量大于一
+    if (hasInfo.index != -1) {
+      if (hasInfo.data.counts > 1) {
+        cartData[hasInfo.index].counts += counts;
+      }
+    }
+    this.execSetStorageSync(cartData);  //更新本地缓存
+  };
+
+  /*
+   * 删除某些商品
+   */
+  delete(ids) {
+    if (!(ids instanceof Array)) {
+      ids = [ids];
+    }
+    var cartData = this.getCartDataFromLocal();
+    for (let i = 0; i < ids.length; i++) {
+      var hasInfo = this._isHasThatOne(ids[i], cartData);
+      if (hasInfo.index != -1) {
+        cartData.splice(hasInfo.index, 1);  //删除数组某一项
+      }
+    }
+    this.execSetStorageSync(cartData);
+  }
 }
 
 export { Cart };

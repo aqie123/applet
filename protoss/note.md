@@ -40,7 +40,16 @@
     hidden=true 就会隐藏
 13.商品分类
     这个要仔细看
-14.购物车
+14.购物车  (cart模型读取数据,cart.js读取页面数据)
   a.商品详情页添加购物车  (onAddingToCartTap);引入cart类
   b.获取到购物车商品数量  cartModel->(getCartTotalCounts)
         product.js _onload函数进行数据绑定
+  c.用户添加商品，购物车数量相应改变
+  d.购物车页面
+    1.toggleSelectAll 全选，toggleSelect
+    2.cart-Model编写 cart.cutCounts()
+    3.用户选择商品种类和购物车数据长度一致，则表示全选
+    4.商品详情点击购物车图标 跳转到购物车页面 (bindtap="onCartTap")
+    5.记录购物车页面勾选状态 cart.js onHide()
+15. 删除远程分支
+  a.git push origin --delete 2017/8/15

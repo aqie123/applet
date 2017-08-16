@@ -18,7 +18,7 @@ Page({
     countsArray: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     productCounts: 1,
     currentTabsIndex: 0,
-    cartTotalCounts: 0,
+    cartTotalCounts: 0,   // 给cart数量一个初始值
   },
 
   /**
@@ -107,6 +107,30 @@ Page({
       }, 200);
     }, 1000);
   },
+
+
+  /*跳转到购物车*/
+  onCartTap: function () {
+    wx.switchTab({
+      url: '/pages/cart/cart'
+    });
+  },
+
+  /*下拉刷新页面*/
+  onPullDownRefresh: function () {
+    this._loadData(() => {
+      wx.stopPullDownRefresh()
+    });
+  },
+
+  //分享效果
+  onShareAppMessage: function () {
+    return {
+      title: '零食商贩 Pretty Vendor',
+      path: 'pages/product/product?id=' + this.data.id
+    }
+  }
+
 
  
 })
