@@ -33,6 +33,7 @@ Page({
   _loadData: function(){
     product.getDetailInfo(this.data.id,(data)=>{
       this.setData({
+        cartTotalCounts: cart.getCartTotalCounts().counts1,
         product:data
       })
     });

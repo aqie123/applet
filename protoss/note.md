@@ -42,4 +42,5 @@
     这个要仔细看
 14.购物车
   a.商品详情页添加购物车  (onAddingToCartTap);引入cart类
-  b.
+  b.获取到购物车商品数量  cartModel->(getCartTotalCounts)
+        product.js _onload函数进行数据绑定

@@ -14,34 +14,7 @@ class Cart extends Base {
     this._storageKeyName = 'cart';
   };
 
-  /*
-  * 缓存中获取购物车信息
-  * param
-  * flag - {bool} 是否过滤掉不下单的商品
-  */
-  getCartDataFromLocal(flag) {
-    var res = wx.getStorageSync(this._storageKeyName);
-    if (!res) {
-      res = [];
-    }
-    //在下单的时候过滤不下单的商品，
-    if (flag) {
-      var newRes = [];
-      for (let i = 0; i < res.length; i++) {
-        if (res[i].selectStatus) {
-          newRes.push(res[i]);
-        }
-      }
-      res = newRes;
-    }
-
-    return res;
-  };
-
-  /*本地缓存 保存／更新*/
-  execSetStorageSync(data) {
-    wx.setStorageSync(this._storageKeyName, data);
-  };
+  
 
   /*
     * 加入到购物车
@@ -93,6 +66,65 @@ class Cart extends Base {
     }
     return result;
   }
+
+
+  /*
+  * 缓存中获取购物车信息
+  * param
+  * flag - {bool} 是否过滤掉不下单的商品
+  */
+  getCartDataFromLocal(flag) {
+    var res = wx.getStorageSync(this._storageKeyName);
+    if (!res) {
+      res = [];
+    }
+    //在下单的时候过滤不下单的商品，
+    if (flag) {
+      var newRes = [];
+      for (let i = 0; i < res.length; i++) {
+        if (res[i].selectStatus) {
+          newRes.push(res[i]);
+        }
+      }
+      res = newRes;
+    }
+
+    return res;
+  };
+
+  /*本地缓存 保存／更新*/
+  execSetStorageSync(data) {
+    wx.setStorageSync(this._storageKeyName, data);
+  };
+  
+  /*
+    *获得购物车商品总数目,包括分类和不分类
+    * param:
+    * flag - {bool} 是否区分选中和不选中
+    * return
+    * counts1 - {int} 不分类
+    * counts2 -{int} 分类
+    */
+  getCartTotalCounts(flag) {
+    var data = this.getCartDataFromLocal(),
+      counts1 = 0,
+      counts2 = 0;
+    for (let i = 0; i < data.length; i++) {
+      if (flag) {
+        if (data[i].selectStatus) {
+          counts1 += data[i].counts;
+          counts2++;
+        }
+      } else {
+        counts1 += data[i].counts;
+        counts2++;
+      }
+    }
+    return {
+      counts1: counts1,
+      counts2: counts2
+    };
+  };
 }
 
 export { Cart };
