@@ -67,7 +67,7 @@ Route::get('api/:version/product/recent','api/:version.product/getRecent');
 Route::get('api/:version/category/all','api/:version.category/getAllCategories');  // (http://applet.com/api/v1/category/all)
 
 // token
-Route::post('api/:version/token/user','api/:version.Token/getToken');  // (http://applet.com/api/v1/category/all)
+Route::post('api/:version/token/user','api/:version.Token/getToken');  // (http://applet.com/api/v1/token/user)
 Route::post('api/:version/token/app', 'api/:version.Token/getAppToken');
 Route::post('api/:version/token/verify', 'api/:version.Token/verifyToken');
 

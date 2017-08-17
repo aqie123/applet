@@ -45,18 +45,24 @@ class Token {
     var that = this;
     wx.login({
       success: function (res) {
-        wx.request({
-          url: that.tokenUrl,
-          method: 'POST',
-          data: {
-            code: res.code
-          },
-          // 服务器返回token保存到缓存中
-          success: function (res) {
-            wx.setStorageSync('token', res.data.token);
-            callBack && callBack(res.data.token);
-          }
-        })
+        if(res.code){
+          wx.request({
+            url: that.tokenUrl +"?XDEBUG_SESSION_START = 19594",
+            method: 'POST',
+            data: {
+              code: res.code
+            },
+            
+            // 服务器返回token保存到缓存中
+            success: function (res) {
+              wx.setStorageSync('token', res.data.token);
+              callBack && callBack(res.data.token);
+            }
+          })
+        } else {
+          console.log('获取用户登录态失败！' + res.errMsg)
+        }
+
       }
     })
   }
