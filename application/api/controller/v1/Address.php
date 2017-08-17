@@ -22,7 +22,7 @@ class Address extends BaseController
 {
     protected $beforeActionList = [
         'first' => ['only' => 'second,third'],      // 只有second才需要执行前置方法first
-        'checkPrimaryScope' => ['only' => 'createOrUpdateAddress']
+        'checkPrimaryScope' => ['only' => 'createOrUpdateAddress,getUserAddress']
     ];
     protected function first(){              // 接口的前置方法
         echo 'first';
@@ -72,5 +72,22 @@ class Address extends BaseController
         }
         // return $user;
         return json(new SuccessMessage(),201); // 保障状态码和显示一致
+    }
+
+    /**
+     * 获取用户地址信息
+     * @return  mixed
+     * @throws UserException
+     */
+    public function getUserAddress(){
+        $uid = TokenService::getCurrentUid();
+        $userAddress = UserAddress::where('user_id', $uid)->find();
+        if(!$userAddress){
+            throw new UserException([
+                'msg' => '用户地址不存在',
+                'errorCode' => 60001
+            ]);
+        }
+        return $userAddress;
     }
 }

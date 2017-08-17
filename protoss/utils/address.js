@@ -63,6 +63,22 @@ class Address extends Base {
     };
     return formData;
   }
+
+  /*获得我自己的收货地址*/
+  getAddress(callback) {
+    var that = this;
+    var param = {
+      url: 'address',
+      sCallback: function (res) {
+        if (res) {
+          res.totalDetail = that.setAddressInfo(res);
+          callback && callback(res);
+        }
+      }
+    };
+    this.request(param);
+  }
+
 }
 
 

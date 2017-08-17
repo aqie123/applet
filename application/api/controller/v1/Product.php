@@ -8,7 +8,7 @@
 
 namespace app\api\controller\v1;
 use app\api\validate\Count;
-use app\api\validate\IdMustBePositiveInt;
+use app\api\validate\IDMustBePositiveInt;
 use app\api\model\Product as ProductModel;
 use app\lib\exception\ProductException;
 use app\lib\exception\ThemeException;
@@ -59,7 +59,7 @@ class Product
      * @throws ProductException
      */
     public function getOne($id){
-        (new IdMustBePositiveInt())->goCheck();
+        (new IDMustBePositiveInt())->goCheck();
         $product  = ProductModel::getProductDetail($id);
         if(!$product){
             throw new ProductException();

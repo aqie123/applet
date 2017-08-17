@@ -47,7 +47,7 @@ class Token {
       success: function (res) {
         if(res.code){
           wx.request({
-            url: that.tokenUrl +"?XDEBUG_SESSION_START = 19594",
+            url: that.tokenUrl,
             method: 'POST',
             data: {
               code: res.code

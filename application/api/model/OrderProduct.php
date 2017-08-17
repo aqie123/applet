@@ -10,7 +10,7 @@ namespace app\api\model;
 
 
 // 中间表
-class OrderProduct extends BaseModels
+class OrderProduct extends BaseModel
 {
     //  protected $autoWriteTimestamp = true;
 }

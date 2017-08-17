@@ -6,7 +6,7 @@
  */
 
 namespace app\api\controller\v1;
-use app\api\validate\IdMustBePositiveInt;
+use app\api\validate\IDMustBePositiveInt;
 use app\api\validate\TestValidate;
 use app\lib\exception\MissException;
 use think\Exception;

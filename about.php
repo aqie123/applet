@@ -59,7 +59,7 @@
         1.$data = ['name'=>'aqie']; $validate =new Validate([]); $result = $validate->banch()->check($data);
         2.验证器：
             1.api/validate/TestValidate 测试验证器   $validate =new TestValidate;
-            2.IdMustBePositiveInt
+            2.
 
 26.构建REST API (表述性状态转移)
     1.轻

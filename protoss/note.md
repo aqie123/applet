@@ -64,3 +64,15 @@
   c.新建app.js,在小程序初始化时候验证Token
   d.重构base下request方法
   e.防止重复请求
+  f.getTokenFromServer()将微信传递code，返回到服务器,获取到token
+  存入缓存
+19.重构base下的request方法
+20.order页面加载用户地址
+  1.address模型类加载用户地址
+  2.address 添加 getAddress()
+  3.order.js onload 函数调用显示收货地址
+  4.在tp5 Address控制器编写 address接口
+21.完成付款功能
+  1.新建order模型类
+22.
+  WxPay.Api.php 537两个false(curl出错,错误码:60)

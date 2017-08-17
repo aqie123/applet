@@ -80,7 +80,7 @@ class Order
                 $status['pass'] = false;
             }
             $status['orderPrice'] += $pStatus['totalPrice'];
-            $status['totalCount'] += $pStatus['Count'];
+            //$status['totalCount'] += $pStatus['Count'];
             array_push($status['pStatusArray'], $pStatus);
         }
         return $status;
@@ -155,6 +155,27 @@ class Order
         }
         return $snap;
     }
+    // 单个商品库存检测
+    private function snapProduct($product, $oCount)
+    {
+        $pStatus = [
+            'id' => null,
+            'name' => null,
+            'main_img_url'=>null,
+            'count' => $oCount,
+            'totalPrice' => 0,
+            'price' => 0
+        ];
+
+        $pStatus['counts'] = $oCount;
+        // 以服务器价格为准，生成订单
+        $pStatus['totalPrice'] = $oCount * $product['price'];
+        $pStatus['name'] = $product['name'];
+        $pStatus['id'] = $product['id'];
+        $pStatus['main_img_url'] =$product['main_img_url'];
+        $pStatus['price'] = $product['price'];
+        return $pStatus;
+    }
 
     /**
      * 创建订单 写入订单信息  (多对多  一对多)
@@ -166,7 +187,8 @@ class Order
      */
     private function createOrderByTrans($snap)
     {
-        Db:startTrans();
+
+        Db::startTrans();
         try {
             $orderNo = $this->makeOrderNo();
             $order = new OrderModel();      // 模型和数据库一一对应

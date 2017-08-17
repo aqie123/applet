@@ -118,8 +118,11 @@ class Pay
     // 处理wxOrder prepay_id
     private function recordPreOrder($wxOrder){
         // 必须是update，每次用户取消支付后再次对同一订单支付，prepay_id是不同的
-        OrderModel::where('id', '=', $this->orderID)
-            ->update(['prepay_id' => $wxOrder['prepay_id']]);
+        if(isset($wxOrder['prepay_id'])){
+            OrderModel::where('id', '=', $this->orderID)
+                ->update(['prepay_id' => $wxOrder['prepay_id']]);
+        }
+
     }
 
     // 签名
@@ -130,7 +133,9 @@ class Pay
         $jsApiPayData->SetTimeStamp((string)time());        // php内置函数转换为时间戳,必须转换为string
         $rand = md5(time() . mt_rand(0, 1000));
         $jsApiPayData->SetNonceStr($rand);                 // 随机字符串
-        $jsApiPayData->SetPackage('prepay_id=' . $wxOrder['prepay_id']);  // 注意格式
+        if(isset($wxOrder['prepay_id'])) {
+            $jsApiPayData->SetPackage('prepay_id=' . $wxOrder['prepay_id']);  // 注意格式
+        }
         $jsApiPayData->SetSignType('md5');
         $sign = $jsApiPayData->MakeSign();
         $rawValues = $jsApiPayData->GetValues();     // 将对象转换为数组
