@@ -76,3 +76,6 @@
   1.新建order模型类
 22.
   WxPay.Api.php 537两个false(curl出错,错误码:60)
+23.支付结果页面  pay-result
+  1.
+24.更改service/Order 下面 pStatus

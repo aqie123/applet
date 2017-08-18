@@ -167,7 +167,7 @@ Page({
       if (statusCode != 0) {
         that.deleteProducts(); //将已经下单的商品从购物车删除   当状态为0时，表示
 
-        var flag = statusCode == 2;
+        var flag = statusCode == 2;  // 2代表支付成功
         wx.navigateTo({
           url: '../pay-result/pay-result?id=' + id + '&flag=' + flag + '&from=order'
         });
@@ -176,10 +176,10 @@ Page({
   },
 
   /*
-        *下单失败
-        * params:
-        * data - {obj} 订单结果信息
-        * */
+  *下单失败
+  * params:
+  * data - {obj} 订单结果信息
+  * */
   _orderFail: function (data) {
     var nameArr = [],
       name = '',

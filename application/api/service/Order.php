@@ -80,7 +80,7 @@ class Order
                 $status['pass'] = false;
             }
             $status['orderPrice'] += $pStatus['totalPrice'];
-            //$status['totalCount'] += $pStatus['Count'];
+            $status['totalCount'] += $pStatus['counts'];
             array_push($status['pStatusArray'], $pStatus);
         }
         return $status;
@@ -93,9 +93,11 @@ class Order
         $pStatus = [
             'id' => null,
             'haveStock' => false,
-            'count' => 0,
+            'counts' => 0,
+            'price' => 0,   // 商品单价
             'name' => '',
-            'totalPrice' => 0
+            'totalPrice' => 0, // 订单下面某一类商品总价
+            'main_img_url' => null
         ];
 
         for ($i = 0; $i < count($products); $i++) {
@@ -114,7 +116,9 @@ class Order
             $product = $products[$pIndex];
             $pStatus['id'] = $product['id'];
             $pStatus['name'] = $product['name'];
-            $pStatus['count'] = $oCount;
+            $pStatus['counts'] = $oCount;
+            $pStatus['totalPrice'] = $product['price'];
+            $pStatus['main_img_url'] = $product['main_img_url'];
             $pStatus['totalPrice'] = $product['price'] * $oCount;
 
             if ($product['stock'] - $oCount >= 0) {
