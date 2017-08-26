@@ -39,4 +39,27 @@ Page({
       callback && callback();
     });
   },
+  /*跳转到商品详情*/
+  onProductsItemTap: function (event) {
+    var id = theme.getDataSet(event, 'id');
+    wx.navigateTo({
+      url: '../product/product?id=' + id
+    })
+  },
+
+  /*下拉刷新页面*/
+  onPullDownRefresh: function(){
+    this._loadData(()=>{
+      wx.stopPullDownRefresh()
+    });
+  },
+
+  //分享效果
+  onShareAppMessage: function () {
+    return {
+      title: '零食商贩 Pretty Vendor',
+      path: 'pages/theme/theme?id=' + this.data.id
+    }
+  }
+
 })

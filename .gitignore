@@ -1,0 +1,4 @@
+# 忽略runtime 和 .idea
+runtime
+.idea
+log

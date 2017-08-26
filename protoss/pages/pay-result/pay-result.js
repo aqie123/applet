@@ -12,7 +12,8 @@ Page({
     });
   },
   viewOrder: function () {
-    if (this.data.from == 'my') {
+    if (this.data.from === 'my') {
+      console.log('来自我的订单');
       wx.redirectTo({
         url: '../order/order?from=order&id=' + this.data.id
       });

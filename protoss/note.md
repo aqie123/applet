@@ -95,4 +95,18 @@
   2.加载订单列表  orderModel/getOrders
   3.加载收货地址
   4.显示订单详情 showOrderDetailInfo
-  5.
+  5. 购物车 ： 先下单再付款
+      我的订单： 直接付款
+      repay:
+   note: 此时order页面从我的订单,->支付->查看订单 支付没有传id
+        pay-result.js -> order.js
+  6.用户点击地址管理  editAddress()
+28.重构order.js页面
+  1.cart  下单从缓存中读取
+  2.id    从服务器读取  付款以后
+29.购物车支付,取消
+  1.应该在我的订单页面显示
+    onshow
+    在orderModel->hasNewOrder()
+30.主题页跳转到商品详情页
+  1.

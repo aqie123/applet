@@ -25,13 +25,21 @@ Page({
         * 2.旧的订单
    */
   onLoad: function (options) {
-    var from = options.from;
-    if(from == 'cart'){
+    // 从缓存加载数据
+    let from = options.from;
+    console.log(from);
+    if(from === 'cart'){
       this._fromCart(options.account)
+    } if(from === 'order'){
+      let id = options.id;
+      this._fromOrder(id);
+    }else {
+      this.data.id = options.id;
     }
   },
 
   onShow:function(){
+    // 接收订单号从服务器加载数据
     if(this.data.id) {
       this._fromOrder(this.data.id);
     }
@@ -122,7 +130,7 @@ Page({
         //更新订单状态
         var id = data.order_id;  // 获取服务器生成订单号
         that.data.id = id;
-        // that.data.fromCartFlag = false;
+        that.data.fromCartFlag = false;
 
         //开始支付
         that._execPay(id);
@@ -209,11 +217,11 @@ Page({
 
   _fromCart:function (account){
     // var productArr;
-    // var that = this;
+    let that = this;
     this.data.account = account;
     //来自于购物车
       this.setData({
-        productArr: cart.getCartDataFromLocal(true),
+        productsArr: cart.getCartDataFromLocal(true),
         account: account,
         orderStatus: 0
       });
@@ -231,7 +239,6 @@ Page({
       var that = this;
       //下单后，支付成功或者失败后，点左上角返回时能够更新订单状态
       // 所以放在onshow中
-      // var id = this.data.id;
       order.getOrderInfoById(id, (data)=> {
         that.setData({
           orderStatus: data.status,
@@ -253,4 +260,4 @@ Page({
 
 
   
-})
+});
