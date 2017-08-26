@@ -50,4 +50,24 @@ class Token
         ];
     }
 
+    /**
+     * 第三方应用获取令牌
+     * @url /app_token?
+     * @POST ac=:ac se=:secret
+     */
+    public function getAppToken($ac='', $se='')
+    {
+        /*
+        header('Access-Control-Allow-Origin: *');
+        header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+        header('Access-Control-Allow-Methods: Post,GET');
+        */
+        (new AppTokenGet())->goCheck();
+        $app = new AppToken();
+        $token = $app->get($ac, $se);
+        return [
+            'token' => $token
+        ];
+    }
+
 }

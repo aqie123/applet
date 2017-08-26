@@ -271,9 +271,42 @@
 二：小程序
     a.处理服务器传递过来数据
     b.
+
 三：服务器接口补充
     a.v1/Token 新建
-
+    b.
 
 四： CMS
     1.创建cms
+    2.http://applet.com/cms/pages/login.html
+    3.common.js配置基本url
+    4.登录 starcraft  777*777
+        编写 token/app 路由
+            创建service/AppTokenGet模型
+                model/ThirdApp 模型
+                AppTokenGet验证器
+    5.分页获取所有订单
+        1.新建接口
+        2.model/orderModel/getSummaryByPage()
+    6.微信模板消息   order表 prepay_id  （AT0007	订单发货提醒）
+        1.被动响应
+        2.登录小程序后台 (1848363652 Q)
+        3.service/DeliveryMessage 模型
+            定义 service/WxMessage 基类
+                service/AccessToken  将请求到token存入缓存
+        4.v1/Order/delivery() 并添加路由
+         service/Order/delivery()
+        5. cms配置域名 t.cn
+        6.cors脚本跨域
+            a. v1/token/getAppToken  添加header
+            b.v1/order/getSummary
+            c.api/behavior/CROS.php  在tags.php/ 'app_init' 填写类全名
+    7.生成数据表表字段缓存
+        1.命令行 ;  php think optimize:schema  runtime/schema目录下
+        2. 路由缓存 php think optimize:route   runtime/route.php
+        3.CDN缓存
+    8. 库存量检测
+        1.v1/order.php
+
+
+

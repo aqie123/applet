@@ -36,6 +36,15 @@ class Order extends BaseController
      *   成功：进行库存量检测
      * 8.成功： 进行库存量扣除。 失败：返回失败支付结果
      * ()
+     *
+     * 做库存检测
+     * 创建订单
+     * 减库存 (预扣除库存)
+     * 用户支付 真正减库存
+     * 用户一段时间未支付，还原库存
+     * (php写定时器,每隔一分钟遍历数据找到超时订单,订单还原)
+     * (linux crontab)
+     * (任务队列 订单任务加入到任务队列  redis)
      */
     protected $beforeActionList = [
         'checkExclusiveScope' => ['only' => 'placeOrder'],
@@ -89,5 +98,40 @@ class Order extends BaseController
         }
         return $orderDetail
             ->hidden(['prepay_id']);
+    }
+
+    /**
+     * 获取全部订单简要信息（分页）
+     * @param int $page
+     * @param int $size
+     * @return array
+     * @throws \app\lib\exception\ParameterException
+     */
+    public function getSummary($page=1, $size = 20){
+        (new PagingParameter())->goCheck();
+//        $uid = Token::getCurrentUid();
+        $pagingOrders = OrderModel::getSummaryByPage($page, $size);
+        if ($pagingOrders->isEmpty())
+        {
+            return [
+                'current_page' => $pagingOrders->currentPage(),
+                'data' => []
+            ];
+        }
+        $data = $pagingOrders->hidden(['snap_items', 'snap_address'])
+            ->toArray();
+        return [
+            'current_page' => $pagingOrders->currentPage(),
+            'data' => $data
+        ];
+    }
+
+    public function delivery($id){
+        (new IDMustBePositiveInt())->goCheck();
+        $order = new OrderService();
+        $success = $order->delivery($id);
+        if($success){
+            return new SuccessMessage();
+        }
     }
 }

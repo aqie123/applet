@@ -273,4 +273,25 @@ class Order
         return $status;
     }
 
+    public function delivery($orderID, $jumpPage = '')
+    {
+        $order = OrderModel::where('id', '=', $orderID)
+            ->find();
+        if (!$order) {
+            throw new OrderException();
+        }
+        if ($order->status != OrderStatusEnum::PAID) {
+            throw new OrderException([
+                'msg' => '还没付款呢，想干嘛？或者你已经更新过订单了，不要再刷了',
+                'errorCode' => 80002,
+                'code' => 403
+            ]);
+        }
+        $order->status = OrderStatusEnum::DELIVERED;
+        $order->save();
+//            ->update(['status' => OrderStatusEnum::DELIVERED]);
+        $message = new DeliveryMessage();
+        return $message->sendDeliveryMessage($order, $jumpPage);
+    }
+
 }

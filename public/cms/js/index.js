@@ -17,7 +17,7 @@ $(function(){
     function getOrders(pageIndex){
         var params={
             url:'order/paginate',
-            data:{page:pageIndex,size:20},
+            data:{page:pageIndex,size:15},
             tokenFlag:true,
             sCallback:function(res) {
                 var str = getOrderHtmlStr(res);

@@ -1,5 +1,5 @@
 window.base={
-    g_restUrl:'REST API Base URL',
+    g_restUrl:'http://applet.com/api/v1/',
 
     getData:function(params){
         if(!params.type){

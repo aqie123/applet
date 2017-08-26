@@ -1,5 +1,6 @@
 $(function(){
     $(document).on('click','#login',function(){
+        alert(1);
         var $userName=$('#user-name'),
             $pwd=$('#user-pwd');
         if(!$userName.val()) {

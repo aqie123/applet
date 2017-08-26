@@ -43,4 +43,10 @@ class Order extends BaseModel
             ->paginate($size, true, ['page' => $page]);   // page当前页，客户端传过来页码
         return $pagingData ;
     }
+
+    public static function getSummaryByPage($page=1, $size=20){
+        $pagingData = self::order('create_time desc')
+            ->paginate($size, true, ['page' => $page]);
+        return $pagingData ;
+    }
 }
