@@ -4,6 +4,7 @@ Page({
 
   },
   onLoad: function (options) {
+    console.log(options.from)
     this.setData({
       payResult: options.flag,
       id: options.id,
@@ -18,6 +19,7 @@ Page({
     } else {
       //返回上一级
       wx.navigateBack({
+        // 指定返回几级
         delta: 1
       })
     }

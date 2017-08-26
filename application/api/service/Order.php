@@ -117,7 +117,7 @@ class Order
             $pStatus['id'] = $product['id'];
             $pStatus['name'] = $product['name'];
             $pStatus['counts'] = $oCount;
-            $pStatus['totalPrice'] = $product['price'];
+            $pStatus['price'] = $product['price'];
             $pStatus['main_img_url'] = $product['main_img_url'];
             $pStatus['totalPrice'] = $product['price'] * $oCount;
 

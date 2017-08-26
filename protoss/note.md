@@ -79,3 +79,20 @@
 23.支付结果页面  pay-result
   1.
 24.更改service/Order 下面 pStatus
+
+25.支付：
+  order.js
+    1.购物车支付,订单还未被创建
+      获取服务器生成订单号,根据订单号支付; (下单,订单生成)
+      模型中 order.execPay,拉起微信支付,传递支付参数
+      a.service/Order/getProductStatus
+    2.订单支付
+    
+26.支付结果页面
+  1.order.js/_execPay()
+27.my 页面
+  1.加载微信用户头像和昵称
+  2.加载订单列表  orderModel/getOrders
+  3.加载收货地址
+  4.显示订单详情 showOrderDetailInfo
+  5.

@@ -14,6 +14,8 @@ Page({
    */
   data: {
     id: -1,
+    fromCartFlag:true,
+    addressInfo:null
   },
 
   /**
@@ -23,31 +25,15 @@ Page({
         * 2.旧的订单
    */
   onLoad: function (options) {
-    var productArr;
-    var flag = options.from == 'cart',
-      that = this;
-    this.data.fromCartFlag = flag;
-    this.data.account = options.account;
-
-    //来自于购物车
-    if (flag) {
-      this.setData({
-        productsArr: cart.getCartDataFromLocal(true),
-        account: options.account,
-        orderStatus: 0
-      });
-
-      /*显示收获地址*/
-      
-      address.getAddress((res) => {
-        that._bindAddressInfo(res);
-      });
-      
+    var from = options.from;
+    if(from == 'cart'){
+      this._fromCart(options.account)
     }
+  },
 
-    //旧订单
-    else {
-      this.data.id = options.id;
+  onShow:function(){
+    if(this.data.id) {
+      this._fromOrder(this.data.id);
     }
   },
   /*修改或者添加地址信息*/
@@ -220,6 +206,50 @@ Page({
     }
     cart.delete(ids);
   },
+
+  _fromCart:function (account){
+    // var productArr;
+    // var that = this;
+    this.data.account = account;
+    //来自于购物车
+      this.setData({
+        productArr: cart.getCartDataFromLocal(true),
+        account: account,
+        orderStatus: 0
+      });
+
+      /*显示收获地址*/
+
+      address.getAddress((res) => {
+        that._bindAddressInfo(res);
+      });
+
+  },
+
+  _fromOrder: function (id){
+    if(id) {
+      var that = this;
+      //下单后，支付成功或者失败后，点左上角返回时能够更新订单状态
+      // 所以放在onshow中
+      // var id = this.data.id;
+      order.getOrderInfoById(id, (data)=> {
+        that.setData({
+          orderStatus: data.status,
+          productsArr: data.snap_items,
+          account: data.total_price,
+          basicInfo: {
+            orderTime: data.create_time,
+            orderNo: data.order_no
+          },
+        });
+
+        // 快照地址
+        var addressInfo=data.snap_address;
+        addressInfo.totalDetail = address.setAddressInfo(addressInfo);
+        that._bindAddressInfo(addressInfo);
+      });
+    }
+  }
 
 
   
