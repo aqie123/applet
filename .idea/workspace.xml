@@ -2,13 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29fbcb5f-4a2b-4120-a9d3-8ffd8cfc4a89" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/cache/60/b0009de9309c46a5f3796b8bb8d0b2.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protoss/note.md" afterPath="$PROJECT_DIR$/protoss/note.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protoss/pages/my/my.js" afterPath="$PROJECT_DIR$/protoss/pages/my/my.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protoss/pages/order/order.js" afterPath="$PROJECT_DIR$/protoss/pages/order/order.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protoss/pages/pay-result/pay-result.js" afterPath="$PROJECT_DIR$/protoss/pages/pay-result/pay-result.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protoss/pages/theme/theme.js" afterPath="$PROJECT_DIR$/protoss/pages/theme/theme.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/css/index/iconfont/iconfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/css/index/iconfont/iconfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/css/index/iconfont/iconfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/imgs/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/imgs/list.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/imgs/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/css/common.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/css/index/iconfont/iconfont.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/css/index/iconfont/iconfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/css/index/index-main.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/css/index/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/css/index/index.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/css/login/login-main.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/css/login/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/css/login/login.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/js/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/js/jquery-1.8.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/js/login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/pages/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cms/pages/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.php" afterPath="$PROJECT_DIR$/about.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,11 +46,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="about.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/about.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+            <state relative-caret-position="521">
+              <caret line="278" column="11" lean-forward="false" selection-start-line="278" selection-start-column="11" selection-end-line="278" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -118,7 +134,6 @@
         <option value="$PROJECT_DIR$/application/api/validate/IdMustBePositiveInt.php" />
         <option value="$PROJECT_DIR$/extend/WxPay/WxPay.Api.php" />
         <option value="$PROJECT_DIR$/application/api/service/Pay.php" />
-        <option value="$PROJECT_DIR$/about.php" />
         <option value="$PROJECT_DIR$/application/api/controller/v1/Banner.php" />
         <option value="$PROJECT_DIR$/application/api/controller/v1/Theme.php" />
         <option value="$PROJECT_DIR$/application/api/controller/v1/Product.php" />
@@ -133,6 +148,7 @@
         <option value="$PROJECT_DIR$/protoss/note.md" />
         <option value="$PROJECT_DIR$/protoss/pages/theme/theme.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/about.php" />
       </list>
     </option>
   </component>
@@ -156,8 +172,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="431" />
-    <option name="y" value="3" />
+    <option name="x" value="385" />
+    <option name="y" value="6" />
     <option name="width" value="918" />
     <option name="height" value="759" />
   </component>
@@ -210,6 +226,17 @@
               <item name="applet" type="b2602c69:ProjectViewProjectNode" />
               <item name="applet" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="applet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="applet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="applet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="applet" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cms" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -227,15 +254,16 @@
     <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\aqie\applet\application\extra" />
-      <recent name="F:\applet\application\lib" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\applet\public\cms" />
       <recent name="F:\applet\application\api\service" />
       <recent name="E:\aqie\applet\extend\WxPay" />
       <recent name="E:\aqie\applet\application\api\controller\v2" />
       <recent name="F:\applet\application\index\controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\aqie\applet\application\extra" />
+      <recent name="F:\applet\application\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -382,12 +410,12 @@
       <workItem from="1503304891842" duration="429000" />
       <workItem from="1503711035642" duration="3775000" />
       <workItem from="1503716311939" duration="14062000" />
-      <workItem from="1503771650686" duration="1998000" />
+      <workItem from="1503771650686" duration="2858000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="302062000" />
+    <option name="totallyTimeSpent" value="302922000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -399,7 +427,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="431" y="3" width="918" height="759" extended-state="0" />
+    <frame x="385" y="6" width="918" height="759" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3088578" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -674,14 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="61" column="14" lean-forward="false" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/api/service/Pay.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -790,7 +810,7 @@
         <state relative-caret-position="130">
           <caret line="72" column="2" lean-forward="false" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="13" />
           <folding>
-            <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#0#47#0" expanded="false" />
             <element signature="e#639#824#0" expanded="false" />
             <element signature="e#1384#1498#0" expanded="false" />
             <element signature="e#1542#2134#0" expanded="false" />
@@ -845,8 +865,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        <state relative-caret-position="104">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="278" column="11" lean-forward="false" selection-start-line="278" selection-start-column="11" selection-end-line="278" selection-end-column="11" />
           <folding />
         </state>
       </provider>
